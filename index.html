@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Muhammad Afaq Bhatti — AI/ML Engineer specializing in agentic systems, RAG & GraphRAG, and production MLOps. Kaggle Global Top-14 Data Scientist." />
+<meta name="keywords" content="AI Engineer, ML Engineer, LangGraph, GraphRAG, Multi-Agent Systems, MLOps, Portfolio, Muhammad Afaq Bhatti" />
+<meta name="author" content="Muhammad Afaq Bhatti" />
+
+<meta property="og:title" content="Muhammad Afaq Bhatti — AI/ML Engineer" />
+<meta property="og:description" content="Agentic systems, RAG & GraphRAG, and production MLOps — Kaggle Global Top-14 Data Scientist." />
+<meta property="og:type" content="website" />
+
+<title>Muhammad Afaq Bhatti — AI/ML Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+
+<body>
+
+<!-- ============================== NAVBAR ============================== -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo"><span class="prompt">&gt;</span>afaq<span class="cursor"></span></a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="assets/Afaq_Bhatti_Resume.pdf" download class="btn-resume-nav">Résumé ↓</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Afaq_Bhatti_Resume.pdf" download class="mm-resume">Download Résumé →</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================== HERO ============================== -->
+<section id="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="container hero-layout">
+
+    <div>
+      <span class="hero-badge"><span class="ping"></span>Open to AI/ML Engineer roles</span>
+
+      <h1 class="hero-name">Muhammad<br><span class="accent">Afaq Bhatti</span></h1>
+      <p class="hero-role">AI / ML Engineer — Agentic Systems, RAG &amp; GraphRAG, MLOps</p>
+
+      <div class="hero-terminal">
+        <span class="dollar">$</span>
+        <span>I'm <span id="typing-text"></span><span class="caret"></span></span>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">
+          View Projects
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="assets/Afaq_Bhatti_Resume.pdf" download class="btn-secondary">
+          Download Résumé
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="num">Top 14</span><span class="label">KAGGLE GLOBAL</span></div>
+        <div class="hero-stat"><span class="num">5 agents</span><span class="label">5X FASTER</span></div>
+        <div class="hero-stat"><span class="num">1/6000th</span><span class="label">INFERENCE COST</span></div>
+        <div class="hero-stat"><span class="num">40%</span><span class="label">FASTER DEPLOY</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="agent-graph-frame">
+        <div class="frame-header">
+          <span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-dot"></span>
+          <span class="frame-title">market_intelligence.graph</span>
+        </div>
+
+        <svg viewBox="0 0 440 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a fan-out fan-in multi-agent system: market data feeds five specialist agents whose outputs synthesize into one trading verdict">
+          <defs>
+            <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#3FD9C7" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#3FD9C7" stop-opacity="0.12"/>
+            </linearGradient>
+          </defs>
+
+          <!-- edges: input -> agents -->
+          <g fill="none" stroke="url(#edgeGrad)" stroke-width="1.5">
+            <path id="e1" d="M78,180 Q150,45 210,40"/>
+            <path id="e2" d="M78,180 Q150,110 210,110"/>
+            <path id="e3" d="M78,180 Q150,180 210,180"/>
+            <path id="e4" d="M78,180 Q150,250 210,250"/>
+            <path id="e5" d="M78,180 Q150,315 210,320"/>
+          </g>
+
+          <!-- edges: agents -> output -->
+          <g fill="none" stroke="url(#edgeGrad)" stroke-width="1.5">
+            <path id="o1" d="M230,40 Q320,45 362,175"/>
+            <path id="o2" d="M230,110 Q320,120 362,175"/>
+            <path id="o3" d="M230,180 Q320,180 362,180"/>
+            <path id="o4" d="M230,250 Q320,220 362,185"/>
+            <path id="o5" d="M230,320 Q320,300 362,185"/>
+          </g>
+
+          <!-- flowing data dots -->
+          <g fill="#F5A623">
+            <circle r="3"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0s"><mpath href="#e1"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0.3s"><mpath href="#e2"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0.6s"><mpath href="#e3"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.6s" repeatCount="indefinite" begin="0.9s"><mpath href="#e4"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.6s" repeatCount="indefinite" begin="1.2s"><mpath href="#e5"/></animateMotion></circle>
+          </g>
+          <g fill="#3FD9C7">
+            <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0.2s"><mpath href="#o1"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0.5s"><mpath href="#o2"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0.8s"><mpath href="#o3"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.1s"><mpath href="#o4"/></animateMotion></circle>
+            <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.4s"><mpath href="#o5"/></animateMotion></circle>
+          </g>
+
+          <!-- input node -->
+          <circle cx="60" cy="180" r="18" fill="#1B222E" stroke="#3FD9C7" stroke-width="1.5"/>
+          <text x="60" y="184" text-anchor="middle" class="graph-node-label" font-size="14">⛁</text>
+          <text x="60" y="212" text-anchor="middle" class="graph-node-label">Market Data</text>
+
+          <!-- agent nodes -->
+          <g>
+            <circle cx="220" cy="40" r="13" fill="#1B222E" stroke="#3FD9C7" stroke-width="1.3"/>
+            <text x="220" y="24" text-anchor="middle" class="graph-node-label">Price Action</text>
+
+            <circle cx="220" cy="110" r="13" fill="#1B222E" stroke="#3FD9C7" stroke-width="1.3"/>
+            <text x="220" y="94" text-anchor="middle" class="graph-node-label">Sentiment</text>
+
+            <circle cx="220" cy="180" r="13" fill="#1B222E" stroke="#3FD9C7" stroke-width="1.3"/>
+            <text x="220" y="164" text-anchor="middle" class="graph-node-label">On-Chain</text>
+
+            <circle cx="220" cy="250" r="13" fill="#1B222E" stroke="#3FD9C7" stroke-width="1.3"/>
+            <text x="220" y="234" text-anchor="middle" class="graph-node-label">Macro</text>
+
+            <circle cx="220" cy="320" r="13" fill="#1B222E" stroke="#3FD9C7" stroke-width="1.3"/>
+            <text x="220" y="344" text-anchor="middle" class="graph-node-label">Risk</text>
+          </g>
+
+          <!-- output node -->
+          <circle cx="380" cy="180" r="20" fill="#F5A623"/>
+          <text x="380" y="184" text-anchor="middle" font-size="14">✓</text>
+          <text x="380" y="212" text-anchor="middle" class="graph-node-label graph-node-label--main">Trading Verdict</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================== ABOUT ============================== -->
+<section id="about" class="section-pad">
+  <div class="container about-layout">
+
+    <div class="reveal">
+      <span class="eyebrow">about</span>
+      <h2 class="section-title">Engineer by training.<br>Systems thinker by habit.</h2>
+      <p class="about-lede">
+        I engineer end-to-end AI systems — from raw data ingestion to multi-agent orchestration
+        to cloud-deployed inference — that ship, not just demo.
+      </p>
+      <p class="section-sub" style="max-width:600px;margin-bottom:24px;">
+        Computer Science student at COMSATS University Islamabad, building toward an AI Engineering
+        career and a Kaggle Global Top-14 ranking earned the hard way — through feature engineering,
+        careful validation, and a lot of failed submissions. My work lives at the intersection of
+        LLM system design, agentic orchestration, and MLOps: the parts of AI that have to survive
+        contact with production traffic.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill"><span class="dot"></span>Multi-Agent Systems</span>
+        <span class="pill"><span class="dot"></span>RAG &amp; GraphRAG</span>
+        <span class="pill"><span class="dot"></span>LangGraph / LangChain</span>
+        <span class="pill"><span class="dot"></span>MLOps &amp; CI/CD</span>
+        <span class="pill"><span class="dot"></span>AWS Deployment</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-icon">🎓</div>
+          <div>
+            <h4>Education</h4>
+            <p>BS Computer Science, COMSATS University Islamabad — CGPA 3.4/4.0, expected 2027. Coursework in ML, Generative AI, Agentic AI, Deep Learning, DevOps &amp; MLOps.</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🧭</div>
+          <div>
+            <h4>Current Focus</h4>
+            <p>Agentic pipelines that reason across specialist sub-agents, and GraphRAG systems that make retrieval both cheaper and more accurate.</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🌍</div>
+          <div>
+            <h4>Open To</h4>
+            <p>AI/ML Engineer roles — internships, full-time, and remote collaborations — with a target of relocating to the UAE market by 2027.</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🔗</div>
+          <div>
+            <a href="https://github.com/M-Afaq-Bhatti" target="_blank" rel="noopener" style="color:var(--wire);font-weight:600;font-size:13.5px;margin-right:18px;">GitHub →</a>
+            <a href="https://www.linkedin.com/in/m-afaq-bhatti-b4aa05293/" target="_blank" rel="noopener" style="color:var(--wire);font-weight:600;font-size:13.5px;">LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================== EXPERIENCE ============================== -->
+<section id="experience" class="section-pad section-pad--alt">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:36px;">
+      <span class="eyebrow">experience</span>
+      <h2 class="section-title">Where the theory<br>met production.</h2>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-head">
+        <h3 class="exp-role">Data Science Intern · <span class="exp-company">ITSOLERA</span></h3>
+        <span class="exp-dates">Jul 2025 – Sep 2025</span>
+      </div>
+      <p class="exp-location">Islamabad, Pakistan</p>
+      <ul class="exp-list">
+        <li>Led a team to architect and deploy 6 production-grade ML solutions, including traffic accident forecasting and demographic prediction models.</li>
+        <li>Built FinSentRisk, a financial intelligence platform using LSTM/ARIMA time-series forecasting for market trend prediction and risk assessment.</li>
+        <li>Applied a full MLOps stack — DVC data versioning, MLflow experiment tracking, GitHub Actions CI/CD, and automated model retraining.</li>
+        <li>Reduced model deployment time by 40% via containerized Flask inference APIs and automated data-ingestion pipelines.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== SKILLS ============================== -->
+<section id="skills" class="section-pad">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:36px;">
+      <span class="eyebrow">skills</span>
+      <h2 class="section-title">The stack behind<br>the systems.</h2>
+    </div>
+
+    <div class="skills-grid reveal">
+      <div class="skill-cat">
+        <h4>Languages</h4>
+        <div class="skill-tags">
+          <span>Python</span><span>C++</span><span>SQL</span><span>Bash</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>AI / ML</h4>
+        <div class="skill-tags">
+          <span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>OpenCV</span><span>LangChain</span><span>LangGraph</span><span>LangSmith</span><span>LightRAG</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Generative AI &amp; Agentic Systems</h4>
+        <div class="skill-tags">
+          <span>Prompt Engineering</span><span>RAG</span><span>GraphRAG</span><span>Multi-Agent Systems</span><span>LLaMA</span><span>Gemini</span><span>Groq API</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>MLOps &amp; DevOps</h4>
+        <div class="skill-tags">
+          <span>MLflow</span><span>DVC</span><span>Docker</span><span>GitHub Actions</span><span>Jenkins</span><span>Kubernetes</span><span>Git</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Cloud &amp; APIs</h4>
+        <div class="skill-tags">
+          <span>AWS EC2</span><span>S3</span><span>IAM</span><span>FastAPI</span><span>Flask</span><span>Streamlit</span><span>REST APIs</span><span>WebSockets</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Data</h4>
+        <div class="skill-tags">
+          <span>NumPy</span><span>Pandas</span><span>MongoDB</span><span>MySQL</span><span>PostgreSQL</span><span>NanoVectorDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== PROJECTS ============================== -->
+<section id="projects" class="section-pad section-pad--alt">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:36px;">
+      <span class="eyebrow">projects</span>
+      <h2 class="section-title">Things I've shipped.</h2>
+      <p class="section-sub">Real systems, real deployment, real metrics — not just notebooks.</p>
+    </div>
+
+    <div id="projects-grid" class="projects-grid">
+      <!-- rendered by js/main.js from js/projects.js -->
+    </div>
+
+    <div class="more-projects reveal">
+      <p>More builds — HireFlow (5-agent recruitment platform), MarketMind, and Kubernetes deployments — live on GitHub.</p>
+      <a href="https://github.com/M-Afaq-Bhatti?tab=repositories" target="_blank" rel="noopener">View all repositories →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== ACHIEVEMENTS ============================== -->
+<section id="achievements" class="section-pad">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:36px;">
+      <span class="eyebrow">achievements</span>
+      <h2 class="section-title">Proof, not promises.</h2>
+    </div>
+
+    <div class="achieve-layout reveal">
+      <div class="kaggle-badge">
+        <span class="medal">🏆</span>
+        <h3>Kaggle Global Top 14</h3>
+        <span class="rank">Data Scientist ranking · worldwide, out of thousands</span>
+        <p>Earned through feature engineering, careful validation strategy, and predictive modeling across competitions — the applied counterpart to the systems work below.</p>
+      </div>
+
+      <div class="cert-list">
+        <div class="cert-item"><span class="cm">✓</span><div><p>Complete Data Science, ML, DL &amp; NLP Bootcamp</p><span>Krish Naik · Udemy</span></div></div>
+        <div class="cert-item"><span class="cm">✓</span><div><p>Advanced SQL</p><span>Kaggle</span></div></div>
+        <div class="cert-item"><span class="cm">✓</span><div><p>Geospatial Analysis</p><span>Kaggle</span></div></div>
+        <div class="cert-item"><span class="cm">✓</span><div><p>Computer Vision</p><span>Udemy</span></div></div>
+        <div class="cert-item"><span class="cm">✓</span><div><p>Intro to Game AI &amp; Reinforcement Learning</p><span>Kaggle</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== CONTACT ============================== -->
+<section id="contact" class="section-pad section-pad--alt">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:36px;">
+      <span class="eyebrow">contact</span>
+      <h2 class="section-title">Let's build something<br>that ships.</h2>
+      <p class="section-sub">Open to AI/ML Engineer roles, internships, and focused collaborations.</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-links reveal">
+        <a href="mailto:afaqbhatti147@gmail.com" class="contact-link-card">
+          <div class="contact-link-icon"><img src="assets/images/gmail-logo.svg" alt=""/></div>
+          <div><h4>Email</h4><span>afaqbhatti147@gmail.com</span></div>
+        </a>
+        <a href="https://www.linkedin.com/in/m-afaq-bhatti-b4aa05293/" target="_blank" rel="noopener" class="contact-link-card">
+          <div class="contact-link-icon"><img src="assets/images/linkedin-logo.svg" alt=""/></div>
+          <div><h4>LinkedIn</h4><span>m-afaq-bhatti</span></div>
+        </a>
+        <a href="https://github.com/M-Afaq-Bhatti" target="_blank" rel="noopener" class="contact-link-card">
+          <div class="contact-link-icon"><img src="assets/images/github-logo.svg" alt=""/></div>
+          <div><h4>GitHub</h4><span>M-Afaq-Bhatti</span></div>
+        </a>
+        <a href="assets/Afaq_Bhatti_Resume.pdf" download class="contact-link-card">
+          <div class="contact-link-icon" style="font-size:17px;">📄</div>
+          <div><h4>Résumé</h4><span>Download PDF</span></div>
+        </a>
+      </div>
+
+      <div class="contact-form-card reveal">
+        <h3>Send a message</h3>
+        <p>Opens in your email client — no server, no spam.</p>
+        <form id="contact-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required class="form-input" />
+            <input type="email" name="email" placeholder="Your email" required class="form-input" />
+          </div>
+          <input type="text" name="subject" placeholder="Subject" class="form-input" style="margin-bottom:12px;" />
+          <textarea name="message" rows="4" placeholder="Tell me about the role or project..." required class="form-input"></textarea>
+          <button type="submit" class="btn-submit">Send Message →</button>
+          <p class="form-note">Prefer email directly? afaqbhatti147@gmail.com</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <p>
+    Designed &amp; built with <span class="heart">♥</span> by Muhammad Afaq Bhatti
+    <span class="foot-links">
+      · <a href="https://github.com/M-Afaq-Bhatti" target="_blank" rel="noopener">GitHub</a>
+      · <a href="https://www.linkedin.com/in/m-afaq-bhatti-b4aa05293/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </p>
+  <p style="margin-top:8px;color:var(--text-faint);font-size:12px;">© <span id="year"></span> Muhammad Afaq Bhatti. All rights reserved.</p>
+</footer>
+
+
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
