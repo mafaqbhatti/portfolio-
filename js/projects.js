@@ -27,6 +27,17 @@ const projects = [
     github: "https://github.com/M-Afaq-Bhatti"
   },
   {
+    title: "NeRF Turntable",
+    subtitle: "2D Photos to 3D Neural Rendering",
+    date: "2025",
+    metric: "Full NeRF built from scratch, no libraries",
+    description:
+      "A from-scratch PyTorch implementation of Neural Radiance Fields — positional encoding, an 8-layer density/color MLP, and volumetric ray-marching, trained on 20 turntable photos to synthesize novel 360° views. Wrapped in a FastAPI + React app with an async render-job queue so anyone can generate a rotating GIF from the trained model on demand.",
+    tags: ["PyTorch", "NeRF", "Volumetric Rendering", "FastAPI", "React"],
+    path: "~/projects/nerf-turntable",
+    github: "https://github.com/M-Afaq-Bhatti/nerf"
+  },
+  {
     title: "VisionRAG",
     subtitle: "Multimodal Document Intelligence",
     date: "Apr 2026",
@@ -48,4 +59,5 @@ const projects = [
     path: "~/projects/emotion-detection",
     github: "https://github.com/M-Afaq-Bhatti"
   }
+  
 ];
