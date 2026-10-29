@@ -30,7 +30,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${project.title} — Afaq Bhatti`,
+    title: project.title,
     description: project.headline,
     openGraph: {
       title: `${project.title} — Case Study`,

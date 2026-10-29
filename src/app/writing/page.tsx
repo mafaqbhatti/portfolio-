@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getWritingPosts, hasWritingPosts } from "@/lib/writing";
 
 export const metadata = {
-  title: "Writing — Afaq Bhatti",
+  title: "Writing",
   description:
     "Technical notes, systems engineering analysis, and evaluation benchmarks.",
 };

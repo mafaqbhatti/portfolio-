@@ -12,7 +12,7 @@ import { TodoMarker } from "@/components/ui/todo-marker";
 import { ObfuscatedEmail } from "@/components/ui/obfuscated-email";
 
 export const metadata: Metadata = {
-  title: `Résumé — ${identity.fullName}`,
+  title: "Résumé",
   description: `Web and PDF résumé for ${identity.fullName}, ${identity.role} based in ${identity.location}.`,
   alternates: {
     canonical: "/resume",
