@@ -24,7 +24,7 @@ export function StackSection() {
         {stackCategories.map((group) => (
           <div
             key={group.category}
-            className="border hairline-border rounded-lg bg-surface p-6 flex flex-col justify-between"
+            className="border hairline-border rounded-lg bg-surface p-6 flex flex-col justify-between card-editorial"
           >
             <div>
               <div className="font-mono text-xs text-text uppercase tracking-wider pb-3 border-b hairline-b font-medium">

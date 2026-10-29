@@ -50,4 +50,3 @@ export function getWritingPosts(): WritingPost[] {
 export function hasWritingPosts(): boolean {
   return getWritingPosts().length > 0;
 }
-

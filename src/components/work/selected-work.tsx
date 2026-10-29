@@ -14,10 +14,10 @@ export function SelectedWork() {
     switch (slug) {
       case "flood-forecasting":
         return (
-          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface-2 border hairline-border rounded">
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded card-editorial shadow-2xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>SAR + SATELLITE FUSION</span>
-              <span className="text-accent">IoU 0.65</span>
+              <span className="text-accent font-semibold">IoU 0.65</span>
             </div>
             <div className="py-2">
               <div className="text-xs font-mono text-text font-medium mb-1">
@@ -34,10 +34,10 @@ export function SelectedWork() {
         );
       case "finops-graphrag":
         return (
-          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface-2 border hairline-border rounded">
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded card-editorial shadow-2xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>LOCAL KNOWLEDGE GRAPH</span>
-              <span className="text-accent">50× COST</span>
+              <span className="text-accent font-semibold">50× COST</span>
             </div>
             <div className="py-2">
               <div className="text-xs font-mono text-text font-medium mb-1">
@@ -54,10 +54,10 @@ export function SelectedWork() {
         );
       case "market-intelligence":
         return (
-          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface-2 border hairline-border rounded">
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded card-editorial shadow-2xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>FAN-OUT / FAN-IN MULTI-AGENT</span>
-              <span className="text-accent">5× FASTER</span>
+              <span className="text-accent font-semibold">5× FASTER</span>
             </div>
             <div className="py-2">
               <div className="text-xs font-mono text-text font-medium mb-1">

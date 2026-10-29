@@ -87,7 +87,7 @@ export function CaseStudyLayout({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Left Column: Sticky Table of Contents (Desktop only) */}
         <aside className="hidden lg:block lg:col-span-4 sticky top-24">
-          <div className="border hairline-border rounded-lg bg-surface p-5">
+          <div className="border hairline-border rounded-lg bg-surface p-5 card-editorial">
             <div className="font-mono text-xs uppercase tracking-wider text-text-muted pb-3 mb-3 border-b hairline-b font-medium">
               Table of Contents
             </div>

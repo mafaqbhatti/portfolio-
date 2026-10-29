@@ -21,7 +21,7 @@ export function ContactSection() {
         </p>
       </div>
 
-      <div className="border hairline-border rounded-lg bg-surface p-8 sm:p-12 space-y-8">
+      <div className="border hairline-border rounded-lg bg-surface p-8 sm:p-12 space-y-8 card-editorial">
         <div>
           <div className="font-mono text-xs text-text-muted uppercase tracking-wider mb-3">
             Primary Email (Click or Copy)

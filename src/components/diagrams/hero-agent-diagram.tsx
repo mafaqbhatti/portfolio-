@@ -25,356 +25,247 @@ export function HeroAgentDiagram() {
   return (
     <figure
       ref={containerRef}
-      className="w-full max-w-[500px] border hairline-border rounded-lg bg-surface p-4 sm:p-5"
+      className="w-full max-w-[500px] border hairline-border rounded-lg bg-surface p-4 sm:p-5 card-editorial"
     >
-      {/* Editorial Diagram Header */}
+      {/* CAD Schematic Header */}
       <div className="flex items-center justify-between pb-3 mb-3 border-b hairline-b font-mono text-[11px] text-text-muted">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          <span className="uppercase tracking-wider">Architecture</span>
+          <span className="uppercase tracking-wider">Topology // DAG</span>
         </div>
         <span className="text-text-faint">LangGraph · 5 Agents</span>
       </div>
 
-      {/* Inline SVG Diagram */}
-      <div className="relative w-full aspect-[440/340] flex items-center justify-center">
+      {/* Precision SVG Schematic */}
+      <div className="relative w-full aspect-[460/340] flex items-center justify-center">
         <svg
-          viewBox="0 0 440 340"
-          className="w-full h-full"
+          viewBox="0 0 460 340"
+          className="w-full h-full select-none"
           role="img"
           aria-label="Illustrative architecture diagram: Market data input fans out to 5 parallel specialist agents (Price Action, Sentiment, On-Chain, Macro, Risk), which synthesize concurrently into a single trading verdict."
         >
           <defs>
-            <linearGradient id="edgeLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="var(--border)" stopOpacity="0.8" />
-              <stop offset="50%" stopColor="var(--border)" stopOpacity="0.4" />
-              <stop offset="100%" stopColor="var(--border)" stopOpacity="0.8" />
-            </linearGradient>
+            {/* Subtle path definitions for motion */}
+            <path id="cad-e1" d="M 112 170 C 138 170, 142 40, 168 40" />
+            <path id="cad-e2" d="M 112 170 C 138 170, 142 105, 168 105" />
+            <path id="cad-e3" d="M 112 170 L 168 170" />
+            <path id="cad-e4" d="M 112 170 C 138 170, 142 235, 168 235" />
+            <path id="cad-e5" d="M 112 170 C 138 170, 142 300, 168 300" />
 
-            {/* Subtle flow path definitions */}
-            <path id="flow-e1" d="M 80 170 C 130 170, 150 40, 205 40" />
-            <path id="flow-e2" d="M 80 170 C 130 170, 150 105, 205 105" />
-            <path id="flow-e3" d="M 80 170 C 140 170, 160 170, 205 170" />
-            <path id="flow-e4" d="M 80 170 C 130 170, 150 235, 205 235" />
-            <path id="flow-e5" d="M 80 170 C 130 170, 150 300, 205 300" />
-
-            <path id="flow-o1" d="M 235 40 C 290 40, 310 170, 360 170" />
-            <path id="flow-o2" d="M 235 105 C 290 105, 310 170, 360 170" />
-            <path id="flow-o3" d="M 235 170 C 290 170, 310 170, 360 170" />
-            <path id="flow-o4" d="M 235 235 C 290 235, 310 170, 360 170" />
-            <path id="flow-o5" d="M 235 300 C 290 300, 310 170, 360 170" />
+            <path id="cad-o1" d="M 292 40 C 318 40, 322 170, 348 170" />
+            <path id="cad-o2" d="M 292 105 C 318 105, 322 170, 348 170" />
+            <path id="cad-o3" d="M 292 170 L 348 170" />
+            <path id="cad-o4" d="M 292 235 C 318 235, 322 170, 348 170" />
+            <path id="cad-o5" d="M 292 300 C 318 300, 322 170, 348 170" />
           </defs>
 
-          {/* Connective Curves */}
-          <g fill="none" stroke="var(--border)" strokeWidth="1.25">
-            <path d="M 80 170 C 130 170, 150 40, 205 40" />
-            <path d="M 80 170 C 130 170, 150 105, 205 105" />
-            <path d="M 80 170 C 140 170, 160 170, 205 170" />
-            <path d="M 80 170 C 130 170, 150 235, 205 235" />
-            <path d="M 80 170 C 130 170, 150 300, 205 300" />
+          {/* Technical Corner Registration Crosshairs */}
+          <g
+            stroke="var(--border)"
+            strokeWidth="1"
+            strokeLinecap="round"
+            opacity="0.6"
+          >
+            <line x1="10" y1="14" x2="18" y2="14" />
+            <line x1="14" y1="10" x2="14" y2="18" />
 
-            <path d="M 235 40 C 290 40, 310 170, 360 170" />
-            <path d="M 235 105 C 290 105, 310 170, 360 170" />
-            <path d="M 235 170 C 290 170, 310 170, 360 170" />
-            <path d="M 235 235 C 290 235, 310 170, 360 170" />
-            <path d="M 235 300 C 290 300, 310 170, 360 170" />
+            <line x1="442" y1="14" x2="450" y2="14" />
+            <line x1="446" y1="10" x2="446" y2="18" />
+
+            <line x1="10" y1="326" x2="18" y2="326" />
+            <line x1="14" y1="322" x2="14" y2="330" />
+
+            <line x1="442" y1="326" x2="450" y2="326" />
+            <line x1="446" y1="322" x2="446" y2="330" />
           </g>
 
-          {/* Continuous subtle data pulses (paused offscreen / reduced motion) */}
+          {/* Hairline Connective Wires */}
+          <g fill="none" stroke="var(--border)" strokeWidth="1">
+            <path d="M 112 170 C 138 170, 142 40, 168 40" />
+            <path d="M 112 170 C 138 170, 142 105, 168 105" />
+            <path d="M 112 170 L 168 170" />
+            <path d="M 112 170 C 138 170, 142 235, 168 235" />
+            <path d="M 112 170 C 138 170, 142 300, 168 300" />
+
+            <path d="M 292 40 C 318 40, 322 170, 348 170" />
+            <path d="M 292 105 C 318 105, 322 170, 348 170" />
+            <path d="M 292 170 L 348 170" />
+            <path d="M 292 235 C 318 235, 322 170, 348 170" />
+            <path d="M 292 300 C 318 300, 322 170, 348 170" />
+          </g>
+
+          {/* Micro Data Flow Pulses (Respects motion & visibility) */}
           {isVisible && (
-            <g className="data-flow-pulse" fill="var(--accent)" opacity="0.85">
-              <circle r="2.5">
-                <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s">
-                  <mpath href="#flow-e1" />
+            <g className="data-flow-pulse" fill="var(--accent)">
+              <circle r="1.75">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="0s">
+                  <mpath href="#cad-e1" />
                 </animateMotion>
               </circle>
-              <circle r="2.5">
-                <animateMotion
-                  dur="2.4s"
-                  repeatCount="indefinite"
-                  begin="0.25s"
-                >
-                  <mpath href="#flow-e2" />
+              <circle r="1.75">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.3s">
+                  <mpath href="#cad-e2" />
                 </animateMotion>
               </circle>
-              <circle r="2.5">
-                <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.5s">
-                  <mpath href="#flow-e3" />
+              <circle r="1.75">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.6s">
+                  <mpath href="#cad-e3" />
                 </animateMotion>
               </circle>
-              <circle r="2.5">
-                <animateMotion
-                  dur="2.4s"
-                  repeatCount="indefinite"
-                  begin="0.75s"
-                >
-                  <mpath href="#flow-e4" />
+              <circle r="1.75">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.9s">
+                  <mpath href="#cad-e4" />
                 </animateMotion>
               </circle>
-              <circle r="2.5">
-                <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.0s">
-                  <mpath href="#flow-e5" />
+              <circle r="1.75">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.2s">
+                  <mpath href="#cad-e5" />
                 </animateMotion>
               </circle>
 
-              <circle r="2.5" fill="var(--chart-2)">
-                <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s">
-                  <mpath href="#flow-o1" />
+              <circle r="1.75" opacity="0.8">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.4s">
+                  <mpath href="#cad-o1" />
                 </animateMotion>
               </circle>
-              <circle r="2.5" fill="var(--chart-2)">
-                <animateMotion
-                  dur="2.4s"
-                  repeatCount="indefinite"
-                  begin="1.45s"
-                >
-                  <mpath href="#flow-o2" />
+              <circle r="1.75" opacity="0.8">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.7s">
+                  <mpath href="#cad-o2" />
                 </animateMotion>
               </circle>
-              <circle r="2.5" fill="var(--chart-2)">
-                <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.7s">
-                  <mpath href="#flow-o3" />
+              <circle r="1.75" opacity="0.8">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.0s">
+                  <mpath href="#cad-o3" />
                 </animateMotion>
               </circle>
-              <circle r="2.5" fill="var(--chart-2)">
-                <animateMotion
-                  dur="2.4s"
-                  repeatCount="indefinite"
-                  begin="1.95s"
-                >
-                  <mpath href="#flow-o4" />
+              <circle r="1.75" opacity="0.8">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.3s">
+                  <mpath href="#cad-o4" />
                 </animateMotion>
               </circle>
-              <circle r="2.5" fill="var(--chart-2)">
-                <animateMotion dur="2.4s" repeatCount="indefinite" begin="2.2s">
-                  <mpath href="#flow-o5" />
+              <circle r="1.75" opacity="0.8">
+                <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.6s">
+                  <mpath href="#cad-o5" />
                 </animateMotion>
               </circle>
             </g>
           )}
 
-          {/* Input Node: Market Data */}
+          {/* Node 00: Market Data Input */}
           <g>
-            <circle
-              cx="65"
-              cy="170"
-              r="18"
+            <rect
+              x="20"
+              y="148"
+              width="92"
+              height="44"
+              rx="4"
               fill="var(--surface-2)"
               stroke="var(--border)"
-              strokeWidth="1.5"
+              strokeWidth="1"
             />
             <text
-              x="65"
-              y="174"
-              textAnchor="middle"
-              fill="var(--accent)"
-              fontSize="11"
+              x="28"
+              y="163"
+              fill="var(--text-faint)"
+              fontSize="8.5"
               fontFamily="var(--font-geist-mono)"
-              fontWeight="600"
+              letterSpacing="0.05em"
             >
-              IN
+              [SRC:STREAM]
             </text>
             <text
-              x="65"
-              y="202"
-              textAnchor="middle"
-              fill="var(--text-muted)"
-              fontSize="10"
+              x="28"
+              y="179"
+              fill="var(--text)"
+              fontSize="10.5"
               fontFamily="var(--font-geist-mono)"
+              fontWeight="500"
             >
               Market Data
             </text>
+            {/* Terminal Pin */}
+            <circle cx="112" cy="170" r="2" fill="var(--text-muted)" />
           </g>
 
-          {/* 5 Specialist Agent Nodes (Center Column) */}
-          {/* Agent 1: Price Action */}
-          <g>
-            <circle
-              cx="220"
-              cy="40"
-              r="14"
-              fill="var(--surface-2)"
-              stroke="var(--border)"
-              strokeWidth="1.25"
-            />
-            <text
-              x="220"
-              y="44"
-              textAnchor="middle"
-              fill="var(--text)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              01
-            </text>
-            <text
-              x="220"
-              y="22"
-              textAnchor="middle"
-              fill="var(--text-muted)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              Price Action
-            </text>
-          </g>
+          {/* Parallel Specialist Agents (01 through 05) */}
+          {[
+            { id: "01", label: "Price Action", y: 22, cy: 40 },
+            { id: "02", label: "Sentiment", y: 87, cy: 105 },
+            { id: "03", label: "On-Chain", y: 152, cy: 170 },
+            { id: "04", label: "Macro", y: 217, cy: 235 },
+            { id: "05", label: "Risk", y: 282, cy: 300 },
+          ].map((agent) => (
+            <g key={agent.id}>
+              {/* In/Out Pins */}
+              <circle cx="168" cy={agent.cy} r="2" fill="var(--text-faint)" />
+              <circle cx="292" cy={agent.cy} r="2" fill="var(--text-faint)" />
 
-          {/* Agent 2: Sentiment */}
-          <g>
-            <circle
-              cx="220"
-              cy="105"
-              r="14"
-              fill="var(--surface-2)"
-              stroke="var(--border)"
-              strokeWidth="1.25"
-            />
-            <text
-              x="220"
-              y="109"
-              textAnchor="middle"
-              fill="var(--text)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              02
-            </text>
-            <text
-              x="220"
-              y="87"
-              textAnchor="middle"
-              fill="var(--text-muted)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              Sentiment
-            </text>
-          </g>
+              <rect
+                x="168"
+                y={agent.y}
+                width="124"
+                height="36"
+                rx="4"
+                fill="var(--surface-2)"
+                stroke="var(--border)"
+                strokeWidth="1"
+              />
+              <text
+                x="178"
+                y={agent.y + 14}
+                fill="var(--text-faint)"
+                fontSize="8"
+                fontFamily="var(--font-geist-mono)"
+                letterSpacing="0.06em"
+              >
+                AGENT.{agent.id}
+              </text>
+              <text
+                x="178"
+                y={agent.y + 27}
+                fill="var(--text)"
+                fontSize="10"
+                fontFamily="var(--font-geist-mono)"
+                fontWeight="500"
+              >
+                {agent.label}
+              </text>
+            </g>
+          ))}
 
-          {/* Agent 3: On-Chain */}
+          {/* Node 06: Fan-In Synthesis / Trading Verdict */}
           <g>
-            <circle
-              cx="220"
-              cy="170"
-              r="14"
-              fill="var(--surface-2)"
-              stroke="var(--border)"
-              strokeWidth="1.25"
-            />
-            <text
-              x="220"
-              y="174"
-              textAnchor="middle"
-              fill="var(--text)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              03
-            </text>
-            <text
-              x="220"
-              y="152"
-              textAnchor="middle"
-              fill="var(--text-muted)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              On-Chain
-            </text>
-          </g>
+            {/* In Pin */}
+            <circle cx="348" cy="170" r="2" fill="var(--accent)" />
 
-          {/* Agent 4: Macro */}
-          <g>
-            <circle
-              cx="220"
-              cy="235"
-              r="14"
-              fill="var(--surface-2)"
-              stroke="var(--border)"
-              strokeWidth="1.25"
-            />
-            <text
-              x="220"
-              y="239"
-              textAnchor="middle"
-              fill="var(--text)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              04
-            </text>
-            <text
-              x="220"
-              y="217"
-              textAnchor="middle"
-              fill="var(--text-muted)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              Macro
-            </text>
-          </g>
-
-          {/* Agent 5: Risk */}
-          <g>
-            <circle
-              cx="220"
-              cy="300"
-              r="14"
-              fill="var(--surface-2)"
-              stroke="var(--border)"
-              strokeWidth="1.25"
-            />
-            <text
-              x="220"
-              y="304"
-              textAnchor="middle"
-              fill="var(--text)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              05
-            </text>
-            <text
-              x="220"
-              y="325"
-              textAnchor="middle"
-              fill="var(--text-muted)"
-              fontSize="9"
-              fontFamily="var(--font-geist-mono)"
-            >
-              Risk
-            </text>
-          </g>
-
-          {/* Output Node: Trading Verdict (Fan-In Synthesis) */}
-          <g>
-            <circle
-              cx="375"
-              cy="170"
-              r="18"
+            <rect
+              x="348"
+              y="148"
+              width="96"
+              height="44"
+              rx="4"
               fill="var(--surface-2)"
               stroke="var(--accent)"
-              strokeWidth="1.5"
+              strokeWidth="1"
             />
             <text
-              x="375"
-              y="174"
-              textAnchor="middle"
+              x="356"
+              y="163"
               fill="var(--accent)"
-              fontSize="11"
+              fontSize="8.5"
               fontFamily="var(--font-geist-mono)"
+              letterSpacing="0.05em"
               fontWeight="600"
             >
-              SYN
+              [SYN:VERDICT]
             </text>
             <text
-              x="375"
-              y="202"
-              textAnchor="middle"
+              x="356"
+              y="179"
               fill="var(--text)"
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
+              fontWeight="500"
             >
               Trading Verdict
             </text>

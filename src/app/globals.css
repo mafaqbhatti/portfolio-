@@ -3,33 +3,45 @@
 @tailwind utilities;
 
 :root {
-  /* Default: Dark Theme */
-  --bg: #0A0B0D;
-  --surface: #101215;
-  --surface-2: #161A1F;
-  --border: #232830;
-  --text: #ECEEF1;
-  --text-muted: #9AA1AB;
-  --text-faint: #7A828E;
-  --accent: #D4FF3A;
-  --accent-ink: #0A0B0D;
-  --highlight: #D4FF3A;
-  --chart-1: #D4FF3A;
+  /* =========================================================================
+     DARK THEME (Default) — Staff Editorial Obsidian
+     Warm charcoal-ink base, luminous alpha borders, refined phosphor chartreuse
+     ========================================================================= */
+  --bg: #0C0D0E;
+  --surface: #131417;
+  --surface-2: #191B1F;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --border-hover: rgba(255, 255, 255, 0.16);
+  --text: #F0F0EC;
+  --text-muted: #9BA1AC;
+  --text-faint: #6D737F;
+  --accent: #CEF535;
+  --accent-ink: #0C0D0E;
+  --accent-subtle: rgba(206, 245, 53, 0.12);
+  --highlight: #CEF535;
+  --chart-1: #CEF535;
   --chart-2: #7DB7FF;
   --chart-3: #FF8A6B;
 }
 
 html.light {
-  /* Light Theme */
+  /* =========================================================================
+     LIGHT THEME — Editorial Warm Paper
+     Natural warm ivory paper base with deep forest accent
+     ========================================================================= */
   --bg: #FAFAF7;
   --surface: #FFFFFF;
   --surface-2: #F2F2EC;
   --border: #E4E4DD;
+  --border-subtle: #EEEEEC;
+  --border-hover: #D0D0C8;
   --text: #111315;
   --text-muted: #555C66;
   --text-faint: #8E95A0;
   --accent: #3F6B00;
   --accent-ink: #FFFFFF;
+  --accent-subtle: rgba(63, 107, 0, 0.08);
   --highlight: #D4FF3A;
   --chart-1: #3F6B00;
   --chart-2: #2563EB;
@@ -53,7 +65,7 @@ html.light {
     min-height: 100vh;
   }
 
-  /* Focus visible accessibility styling */
+  /* Accessible focus ring with subtle offset */
   :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
@@ -62,7 +74,7 @@ html.light {
   /* Selection styling */
   ::selection {
     background-color: var(--highlight);
-    color: #0A0B0D;
+    color: #0C0D0E;
   }
 }
 
@@ -95,8 +107,8 @@ html.light {
 }
 
 .section-padding {
-  padding-top: clamp(96px, 12vw, 160px);
-  padding-bottom: clamp(96px, 12vw, 160px);
+  padding-top: clamp(88px, 10vw, 140px);
+  padding-bottom: clamp(88px, 10vw, 140px);
 }
 
 .hairline-border {
@@ -114,6 +126,14 @@ html.light {
   border-top-color: var(--border);
 }
 
+/* Subtle card elevation with micro-inner-highlight */
+.card-editorial {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.04);
+}
+
 /* Respect user's motion preferences */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -125,4 +145,3 @@ html.light {
     scroll-behavior: auto !important;
   }
 }
-

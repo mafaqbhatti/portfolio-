@@ -78,7 +78,7 @@ export function AboutSection() {
         </div>
 
         {/* Education & Academic Credentials (Right / Sidebar) */}
-        <div className="md:col-span-4 border hairline-border rounded-lg bg-surface p-6 font-mono text-xs space-y-4">
+        <div className="md:col-span-4 border hairline-border rounded-lg bg-surface p-6 font-mono text-xs space-y-4 card-editorial">
           <div className="text-text-muted uppercase tracking-wider text-[11px] pb-2 border-b hairline-b">
             Academic Background
           </div>

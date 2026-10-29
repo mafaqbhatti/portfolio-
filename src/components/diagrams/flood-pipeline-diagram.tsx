@@ -2,7 +2,7 @@ import React from "react";
 
 export function FloodPipelineDiagram() {
   return (
-    <figure className="my-8 border hairline-border rounded-lg bg-surface p-4 sm:p-6">
+    <figure className="my-8 border hairline-border rounded-lg bg-surface p-4 sm:p-6 card-editorial">
       <div className="flex items-center justify-between pb-3 mb-4 border-b hairline-b font-mono text-[11px] text-text-muted">
         <span className="uppercase tracking-wider">Pipeline Architecture</span>
         <span className="text-text-faint">PyTorch · Spatiotemporal Fusion</span>
