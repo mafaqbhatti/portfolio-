@@ -1,0 +1,47 @@
+# Netlify Configuration for Next.js App Router Portfolio
+# Reference: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "pnpm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_FLAGS = "--no-frozen-lockfile"
+
+# Official Netlify Next.js runtime plugin (handles App Router, Edge runtime /api/og, SSR, and dynamic routes)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Deploy preview context (enables testing and previews before owner TODOs are finalized)
+[context.deploy-preview]
+  command = "NODE_ENV=development pnpm run build"
+
+[context.branch-deploy]
+  command = "NODE_ENV=development pnpm run build"
+
+# Production context enforces strict integrity checks
+[context.production]
+  command = "pnpm run build"
+
+# Global security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Optimized cache headers for static Next.js assets
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache header for static public assets (fonts, images, pdfs)
+[[headers]]
+  for = "/resume.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=3600"
