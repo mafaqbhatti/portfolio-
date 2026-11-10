@@ -21,10 +21,10 @@ export async function GET(req: NextRequest) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          backgroundColor: "#0A0B0D",
+          backgroundColor: "#0A0D14",
           padding: "80px",
           fontFamily: "system-ui, sans-serif",
-          border: "1px solid #232830",
+          border: "1px solid rgba(255, 255, 255, 0.08)",
         }}
       >
         {/* Top Bar */}
@@ -43,20 +43,12 @@ export async function GET(req: NextRequest) {
               gap: "12px",
             }}
           >
-            <div
-              style={{
-                width: "12px",
-                height: "12px",
-                borderRadius: "50%",
-                backgroundColor: "#D4FF3A",
-              }}
-            />
             <span
               style={{
-                color: "#ECEEF1",
-                fontSize: 24,
-                fontWeight: 600,
-                letterSpacing: "-0.02em",
+                color: "#F1F4F9",
+                fontSize: 26,
+                fontWeight: 700,
+                letterSpacing: "-0.03em",
               }}
             >
               {identity.displayName}
@@ -65,11 +57,10 @@ export async function GET(req: NextRequest) {
 
           <div
             style={{
-              color: "#9AA1AB",
+              color: "#8F9CAE",
               fontSize: 18,
               fontFamily: "monospace",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
+              letterSpacing: "0.02em",
             }}
           >
             {role}
@@ -86,11 +77,11 @@ export async function GET(req: NextRequest) {
         >
           <div
             style={{
-              color: "#ECEEF1",
-              fontSize: 56,
-              fontWeight: 400,
+              color: "#F1F4F9",
+              fontSize: 54,
+              fontWeight: 700,
               lineHeight: 1.1,
-              letterSpacing: "-0.02em",
+              letterSpacing: "-0.03em",
               maxWidth: "960px",
             }}
           >
@@ -99,8 +90,8 @@ export async function GET(req: NextRequest) {
 
           <div
             style={{
-              color: "#9AA1AB",
-              fontSize: 24,
+              color: "#8F9CAE",
+              fontSize: 22,
               lineHeight: 1.4,
               maxWidth: "800px",
             }}
@@ -115,15 +106,15 @@ export async function GET(req: NextRequest) {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            borderTop: "1px solid #232830",
+            borderTop: "1px solid rgba(255, 255, 255, 0.08)",
             paddingTop: "24px",
-            color: "#7A828E",
+            color: "#5A677A",
             fontFamily: "monospace",
             fontSize: 16,
           }}
         >
           <div>Islamabad, Pakistan · Agentic Systems · GraphRAG · MLOps</div>
-          <div style={{ color: "#D4FF3A" }}>afaqbhatti.dev</div>
+          <div style={{ color: "#00D2B4" }}>afaqbhatti.dev</div>
         </div>
       </div>,
       {

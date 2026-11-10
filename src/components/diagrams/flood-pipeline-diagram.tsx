@@ -2,9 +2,9 @@ import React from "react";
 
 export function FloodPipelineDiagram() {
   return (
-    <figure className="my-8 border hairline-border rounded-lg bg-surface p-4 sm:p-6 card-editorial">
+    <figure className="my-8 border hairline-border rounded bg-surface p-4 sm:p-6">
       <div className="flex items-center justify-between pb-3 mb-4 border-b hairline-b font-mono text-[11px] text-text-muted">
-        <span className="uppercase tracking-wider">Pipeline Architecture</span>
+        <span className="font-semibold text-text">Pipeline Architecture</span>
         <span className="text-text-faint">PyTorch · Spatiotemporal Fusion</span>
       </div>
 
@@ -22,9 +22,9 @@ export function FloodPipelineDiagram() {
               y="25"
               width="130"
               height="270"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -44,9 +44,9 @@ export function FloodPipelineDiagram() {
               y="70"
               width="100"
               height="28"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -65,9 +65,9 @@ export function FloodPipelineDiagram() {
               y="106"
               width="100"
               height="28"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -86,9 +86,9 @@ export function FloodPipelineDiagram() {
               y="142"
               width="100"
               height="28"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -107,9 +107,9 @@ export function FloodPipelineDiagram() {
               y="178"
               width="100"
               height="28"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -128,9 +128,9 @@ export function FloodPipelineDiagram() {
               y="214"
               width="100"
               height="28"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -149,9 +149,9 @@ export function FloodPipelineDiagram() {
               y="250"
               width="100"
               height="28"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -166,12 +166,11 @@ export function FloodPipelineDiagram() {
             </text>
           </g>
 
-          {/* Arrow 1 */}
+          {/* Connective Line 1 */}
           <path
             d="M 150 160 L 195 160"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
-            markerEnd="url(#arrow)"
           />
 
           {/* Group 2: ResNet18 Spatial Encoder */}
@@ -181,9 +180,9 @@ export function FloodPipelineDiagram() {
               y="80"
               width="115"
               height="160"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -213,19 +212,19 @@ export function FloodPipelineDiagram() {
               y="150"
               width="90"
               height="32"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1A56DB"
               strokeWidth="1"
             />
             <text
               x="252"
               y="170"
               textAnchor="middle"
-              fill="var(--accent)"
+              fill="#1A56DB"
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
-              fontWeight="500"
+              fontWeight="600"
             >
               ResNet18
             </text>
@@ -241,10 +240,10 @@ export function FloodPipelineDiagram() {
             </text>
           </g>
 
-          {/* Arrow 2 */}
+          {/* Connective Line 2 */}
           <path
             d="M 310 160 L 350 160"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
           />
 
@@ -255,9 +254,9 @@ export function FloodPipelineDiagram() {
               y="80"
               width="115"
               height="160"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -287,19 +286,19 @@ export function FloodPipelineDiagram() {
               y="150"
               width="90"
               height="32"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#00D2B4"
               strokeWidth="1"
             />
             <text
               x="407"
               y="170"
               textAnchor="middle"
-              fill="var(--chart-2)"
+              fill="#00D2B4"
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
-              fontWeight="500"
+              fontWeight="600"
             >
               ConvLSTM
             </text>
@@ -315,10 +314,10 @@ export function FloodPipelineDiagram() {
             </text>
           </g>
 
-          {/* Arrow 3 */}
+          {/* Connective Line 3 */}
           <path
             d="M 465 160 L 505 160"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
           />
 
@@ -329,10 +328,10 @@ export function FloodPipelineDiagram() {
               y="80"
               width="115"
               height="160"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--accent)"
-              strokeWidth="1.5"
+              stroke="#1A56DB"
+              strokeWidth="1"
             />
             <text
               x="562"
@@ -361,9 +360,9 @@ export function FloodPipelineDiagram() {
               y="145"
               width="90"
               height="30"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -381,19 +380,19 @@ export function FloodPipelineDiagram() {
               y="182"
               width="90"
               height="30"
-              rx="4"
+              rx="2"
               fill="var(--surface)"
-              stroke="var(--border)"
+              stroke="#00D2B4"
               strokeWidth="1"
             />
             <text
               x="562"
               y="201"
               textAnchor="middle"
-              fill="var(--accent)"
+              fill="#00D2B4"
               fontSize="9"
               fontFamily="var(--font-geist-mono)"
-              fontWeight="500"
+              fontWeight="600"
             >
               MC Dropout (p=0.2)
             </text>

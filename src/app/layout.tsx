@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { instrumentSerif, geistSans, geistMono } from "@/lib/fonts";
+import { spaceGrotesk, geistSans, geistMono } from "@/lib/fonts";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SkipLink } from "@/components/ui/skip-link";
@@ -9,8 +9,8 @@ import "./globals.css";
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#0A0B0D" },
-    { media: "(prefers-color-scheme: light)", color: "#FAFAF7" },
+    { media: "(prefers-color-scheme: dark)", color: "#0A0D14" },
+    { media: "(prefers-color-scheme: light)", color: "#F8FAFC" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -97,7 +97,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${instrumentSerif.variable} ${geistSans.variable} ${geistMono.variable}`}
+      className={`${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />

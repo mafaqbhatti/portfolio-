@@ -68,7 +68,7 @@ export function CaseStudyLayout({
 
       {/* Hero Title & Headline */}
       <div className="mb-12 border-b hairline-b pb-8">
-        <div className="font-mono-label text-text-muted mb-2">
+        <div className="font-mono text-xs text-text-muted mb-2">
           Case Study / {project.index}
         </div>
         <h1 className="font-h2 text-text mb-4">{project.title}</h1>
@@ -87,8 +87,8 @@ export function CaseStudyLayout({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Left Column: Sticky Table of Contents (Desktop only) */}
         <aside className="hidden lg:block lg:col-span-4 sticky top-24">
-          <div className="border hairline-border rounded-lg bg-surface p-5 card-editorial">
-            <div className="font-mono text-xs uppercase tracking-wider text-text-muted pb-3 mb-3 border-b hairline-b font-medium">
+          <div className="border hairline-border rounded bg-surface p-5">
+            <div className="font-mono text-xs text-text-muted pb-3 mb-3 border-b hairline-b font-medium">
               Table of Contents
             </div>
             <nav className="space-y-1 font-mono text-xs">
@@ -120,12 +120,12 @@ export function CaseStudyLayout({
         {prevProject ? (
           <Link
             href={`/work/${prevProject.slug}`}
-            className="border hairline-border rounded-lg p-5 hover:bg-surface/60 transition-colors duration-150 flex flex-col items-start gap-1 group focus-visible:rounded"
+            className="border hairline-border rounded p-5 hover:bg-surface-2/60 transition-colors duration-150 flex flex-col items-start gap-1 group focus-visible:rounded"
           >
             <span className="text-text-muted flex items-center gap-1 group-hover:-translate-x-0.5 transition-transform duration-150">
               <ArrowLeft className="w-3.5 h-3.5" /> Previous case study
             </span>
-            <span className="font-serif text-lg text-text group-hover:text-accent transition-colors duration-150">
+            <span className="font-display font-bold text-lg text-text group-hover:text-accent transition-colors duration-150">
               {prevProject.title}
             </span>
           </Link>
@@ -136,12 +136,12 @@ export function CaseStudyLayout({
         {nextProject ? (
           <Link
             href={`/work/${nextProject.slug}`}
-            className="border hairline-border rounded-lg p-5 hover:bg-surface/60 transition-colors duration-150 flex flex-col items-start sm:items-end gap-1 group focus-visible:rounded"
+            className="border hairline-border rounded p-5 hover:bg-surface-2/60 transition-colors duration-150 flex flex-col items-start sm:items-end gap-1 group focus-visible:rounded"
           >
             <span className="text-text-muted flex items-center gap-1 group-hover:translate-x-0.5 transition-transform duration-150">
               Next case study <ArrowRight className="w-3.5 h-3.5" />
             </span>
-            <span className="font-serif text-lg text-text group-hover:text-accent transition-colors duration-150 text-left sm:text-right">
+            <span className="font-display font-bold text-lg text-text group-hover:text-accent transition-colors duration-150 text-left sm:text-right">
               {nextProject.title}
             </span>
           </Link>
@@ -168,8 +168,8 @@ export function Section({
   return (
     <section id={id} className="py-10 border-b hairline-b scroll-mt-24">
       <div className="mb-4">
-        <span className="font-mono-label text-text-muted">{index}</span>
-        <h2 className="font-serif text-2xl sm:text-3xl text-text mt-1">
+        <span className="font-mono text-xs text-text-muted">{index}</span>
+        <h2 className="font-display font-bold text-2xl sm:text-3xl text-text mt-1">
           {title}
         </h2>
       </div>
@@ -195,17 +195,17 @@ export function FactsBar({
   links: Array<{ label: string; href?: string; marker?: string }>;
 }) {
   return (
-    <div className="my-6 border hairline-border rounded-lg bg-surface p-5 font-mono text-xs">
+    <div className="my-6 border hairline-border rounded bg-surface p-5 font-mono text-xs">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <span className="text-text-muted uppercase tracking-wider text-[11px] block mb-1">
+          <span className="text-text-muted text-[11px] block mb-1 font-medium">
             Role & Ownership
           </span>
           <span className="text-text font-medium">{role}</span>
         </div>
 
         <div>
-          <span className="text-text-muted uppercase tracking-wider text-[11px] block mb-1">
+          <span className="text-text-muted text-[11px] block mb-1 font-medium">
             Timeframe & Status
           </span>
           <span className="text-text font-medium">
@@ -214,14 +214,14 @@ export function FactsBar({
         </div>
 
         <div className="sm:col-span-2 pt-2 border-t hairline-t">
-          <span className="text-text-muted uppercase tracking-wider text-[11px] block mb-1">
+          <span className="text-text-muted text-[11px] block mb-1 font-medium">
             Core Stack
           </span>
           <div className="text-text-faint">{stack.join(" · ")}</div>
         </div>
 
         <div className="sm:col-span-2 pt-2 border-t hairline-t">
-          <span className="text-text-muted uppercase tracking-wider text-[11px] block mb-1">
+          <span className="text-text-muted text-[11px] block mb-1 font-medium">
             Artifacts & References
           </span>
           <div className="flex flex-wrap items-center gap-4">
@@ -265,8 +265,8 @@ export function DecisionCard({
   reason: string;
 }) {
   return (
-    <div className="my-4 border hairline-border rounded-lg bg-surface p-5 space-y-3 font-sans text-sm">
-      <div className="font-mono text-xs uppercase tracking-wider text-accent font-semibold">
+    <div className="my-4 border hairline-border rounded bg-surface p-5 space-y-3 font-sans text-sm">
+      <div className="font-mono text-xs text-accent font-semibold">
         Decision: {decision}
       </div>
 

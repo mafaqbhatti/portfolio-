@@ -25,15 +25,14 @@ export function HeroAgentDiagram() {
   return (
     <figure
       ref={containerRef}
-      className="w-full max-w-[500px] border hairline-border rounded-lg bg-surface p-4 sm:p-5 card-editorial"
+      className="w-full max-w-[500px] border hairline-border rounded bg-surface p-4 sm:p-5"
     >
       {/* CAD Schematic Header */}
       <div className="flex items-center justify-between pb-3 mb-3 border-b hairline-b font-mono text-[11px] text-text-muted">
-        <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-          <span className="uppercase tracking-wider">Topology // DAG</span>
-        </div>
-        <span className="text-text-faint">LangGraph · 5 Agents</span>
+        <span className="font-semibold text-text tracking-tight">
+          TOPOLOGY // DAG
+        </span>
+        <span className="text-text-faint">LangGraph · 5 Specialist Agents</span>
       </div>
 
       {/* Precision SVG Schematic */}
@@ -61,10 +60,10 @@ export function HeroAgentDiagram() {
 
           {/* Technical Corner Registration Crosshairs */}
           <g
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1"
             strokeLinecap="round"
-            opacity="0.6"
+            opacity="0.8"
           >
             <line x1="10" y1="14" x2="18" y2="14" />
             <line x1="14" y1="10" x2="14" y2="18" />
@@ -79,8 +78,8 @@ export function HeroAgentDiagram() {
             <line x1="446" y1="322" x2="446" y2="330" />
           </g>
 
-          {/* Hairline Connective Wires */}
-          <g fill="none" stroke="var(--border)" strokeWidth="1">
+          {/* Hairline Connective Wires (Slate #1E2638) */}
+          <g fill="none" stroke="#1E2638" strokeWidth="1.25">
             <path d="M 112 170 C 138 170, 142 40, 168 40" />
             <path d="M 112 170 C 138 170, 142 105, 168 105" />
             <path d="M 112 170 L 168 170" />
@@ -94,56 +93,56 @@ export function HeroAgentDiagram() {
             <path d="M 292 300 C 318 300, 322 170, 348 170" />
           </g>
 
-          {/* Micro Data Flow Pulses (Respects motion & visibility) */}
+          {/* Micro Data Flow Pulses in Signal Cobalt & Cyan */}
           {isVisible && (
-            <g className="data-flow-pulse" fill="var(--accent)">
-              <circle r="1.75">
+            <g className="data-flow-pulse">
+              <circle r="1.75" fill="#1A56DB">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="0s">
                   <mpath href="#cad-e1" />
                 </animateMotion>
               </circle>
-              <circle r="1.75">
+              <circle r="1.75" fill="#1A56DB">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.3s">
                   <mpath href="#cad-e2" />
                 </animateMotion>
               </circle>
-              <circle r="1.75">
+              <circle r="1.75" fill="#1A56DB">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.6s">
                   <mpath href="#cad-e3" />
                 </animateMotion>
               </circle>
-              <circle r="1.75">
+              <circle r="1.75" fill="#1A56DB">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="0.9s">
                   <mpath href="#cad-e4" />
                 </animateMotion>
               </circle>
-              <circle r="1.75">
+              <circle r="1.75" fill="#1A56DB">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.2s">
                   <mpath href="#cad-e5" />
                 </animateMotion>
               </circle>
 
-              <circle r="1.75" opacity="0.8">
+              <circle r="1.75" fill="#00D2B4">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.4s">
                   <mpath href="#cad-o1" />
                 </animateMotion>
               </circle>
-              <circle r="1.75" opacity="0.8">
+              <circle r="1.75" fill="#00D2B4">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.7s">
                   <mpath href="#cad-o2" />
                 </animateMotion>
               </circle>
-              <circle r="1.75" opacity="0.8">
+              <circle r="1.75" fill="#00D2B4">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.0s">
                   <mpath href="#cad-o3" />
                 </animateMotion>
               </circle>
-              <circle r="1.75" opacity="0.8">
+              <circle r="1.75" fill="#00D2B4">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.3s">
                   <mpath href="#cad-o4" />
                 </animateMotion>
               </circle>
-              <circle r="1.75" opacity="0.8">
+              <circle r="1.75" fill="#00D2B4">
                 <animateMotion dur="2.8s" repeatCount="indefinite" begin="2.6s">
                   <mpath href="#cad-o5" />
                 </animateMotion>
@@ -158,9 +157,9 @@ export function HeroAgentDiagram() {
               y="148"
               width="92"
               height="44"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -169,7 +168,6 @@ export function HeroAgentDiagram() {
               fill="var(--text-faint)"
               fontSize="8.5"
               fontFamily="var(--font-geist-mono)"
-              letterSpacing="0.05em"
             >
               [SRC:STREAM]
             </text>
@@ -205,9 +203,9 @@ export function HeroAgentDiagram() {
                 y={agent.y}
                 width="124"
                 height="36"
-                rx="4"
+                rx="2"
                 fill="var(--surface-2)"
-                stroke="var(--border)"
+                stroke="#1E2638"
                 strokeWidth="1"
               />
               <text
@@ -216,7 +214,6 @@ export function HeroAgentDiagram() {
                 fill="var(--text-faint)"
                 fontSize="8"
                 fontFamily="var(--font-geist-mono)"
-                letterSpacing="0.06em"
               >
                 AGENT.{agent.id}
               </text>
@@ -236,25 +233,24 @@ export function HeroAgentDiagram() {
           {/* Node 06: Fan-In Synthesis / Trading Verdict */}
           <g>
             {/* In Pin */}
-            <circle cx="348" cy="170" r="2" fill="var(--accent)" />
+            <circle cx="348" cy="170" r="2" fill="#00D2B4" />
 
             <rect
               x="348"
               y="148"
               width="96"
               height="44"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--accent)"
+              stroke="#1A56DB"
               strokeWidth="1"
             />
             <text
               x="356"
               y="163"
-              fill="var(--accent)"
+              fill="#00D2B4"
               fontSize="8.5"
               fontFamily="var(--font-geist-mono)"
-              letterSpacing="0.05em"
               fontWeight="600"
             >
               [SYN:VERDICT]

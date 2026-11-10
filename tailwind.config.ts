@@ -23,6 +23,7 @@ const config: Config = {
         accent: "var(--accent)",
         "accent-ink": "var(--accent-ink)",
         "accent-subtle": "var(--accent-subtle)",
+        cyan: "var(--telemetry-cyan)",
         highlight: "var(--highlight)",
         chart: {
           1: "var(--chart-1)",
@@ -31,9 +32,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-instrument-serif)", "Georgia", "serif"],
+        display: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
         sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
+        serif: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
       },
       maxWidth: {
         container: "1120px",
@@ -41,11 +43,11 @@ const config: Config = {
         proseWide: "720px",
       },
       borderRadius: {
-        sm: "4px",
-        DEFAULT: "6px",
-        md: "6px",
-        lg: "8px",
-        xl: "10px",
+        sm: "2px",
+        DEFAULT: "4px",
+        md: "4px",
+        lg: "6px",
+        xl: "8px",
       },
       transitionTimingFunction: {
         editorial: "cubic-bezier(0.22, 1, 0.36, 1)",

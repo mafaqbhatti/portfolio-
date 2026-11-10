@@ -22,17 +22,17 @@ export function Header({ hasWritingPosts = false }: HeaderProps) {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full transition-all duration-200 ${
+      className={`sticky top-0 z-40 w-full transition-colors duration-200 ${
         scrolled
           ? "bg-bg/95 backdrop-blur-none border-b hairline-b"
           : "bg-bg border-b border-transparent"
       }`}
     >
       <div className="max-w-[1120px] mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Wordmark (Serif) */}
+        {/* Wordmark (Space Grotesk) */}
         <Link
           href="/"
-          className="font-serif text-xl sm:text-2xl text-text hover:text-accent transition-colors duration-150 tracking-tight focus-visible:rounded"
+          className="font-display font-bold text-lg sm:text-xl text-text hover:text-accent transition-colors duration-150 tracking-tight focus-visible:rounded"
         >
           Afaq Bhatti
         </Link>
@@ -76,13 +76,12 @@ export function Header({ hasWritingPosts = false }: HeaderProps) {
           </Link>
         </nav>
 
-        {/* Actions: Availability chip & Theme toggle */}
+        {/* Actions: Clean architectural availability chip & Theme toggle */}
         <div className="flex items-center gap-3">
           <div
-            className="hidden md:inline-flex items-center gap-1.5 px-2.5 py-1 rounded border hairline-border font-mono text-[11px] text-text-muted bg-surface"
-            title="Current candidate availability status"
+            className="hidden md:inline-flex items-center px-2.5 py-1 rounded border border-border font-mono text-[11px] text-text-muted bg-surface"
+            title="Candidate availability"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             <span>Open to AI/ML roles</span>
           </div>
           <ThemeToggle />

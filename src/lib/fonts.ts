@@ -1,9 +1,9 @@
-import { Instrument_Serif, Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Geist, Geist_Mono } from "next/font/google";
 
-export const instrumentSerif = Instrument_Serif({
-  weight: "400",
+export const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-instrument-serif",
+  weight: ["500", "600", "700"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 

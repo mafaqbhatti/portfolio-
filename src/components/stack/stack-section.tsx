@@ -9,7 +9,7 @@ export function StackSection() {
     >
       {/* Section Header */}
       <div className="mb-12">
-        <span className="font-mono-label text-text-muted">04 / Stack</span>
+        <span className="font-mono text-xs text-text-muted">04 / Stack</span>
         <h2 className="font-h2 text-text mt-2">
           Technical stack and verified system usage.
         </h2>
@@ -19,15 +19,15 @@ export function StackSection() {
         </p>
       </div>
 
-      {/* Grouped Stack Grid (No logos, no pills) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Structural Tabular Grid (No logos, no pills) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {stackCategories.map((group) => (
           <div
             key={group.category}
-            className="border hairline-border rounded-lg bg-surface p-6 flex flex-col justify-between card-editorial"
+            className="border hairline-border rounded bg-surface p-6 flex flex-col justify-between"
           >
             <div>
-              <div className="font-mono text-xs text-text uppercase tracking-wider pb-3 border-b hairline-b font-medium">
+              <div className="font-mono text-xs text-text pb-3 border-b hairline-b font-semibold">
                 {group.category}
               </div>
 
@@ -37,7 +37,7 @@ export function StackSection() {
                     <span className="font-mono text-xs text-text font-medium">
                       {skill.name}
                     </span>
-                    <span className="font-sans text-[11px] text-text-muted leading-snug">
+                    <span className="font-sans text-xs text-text-muted leading-snug">
                       {skill.usedIn.join(", ")}
                     </span>
                   </li>

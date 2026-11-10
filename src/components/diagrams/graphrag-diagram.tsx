@@ -2,9 +2,9 @@ import React from "react";
 
 export function GraphRAGDiagram() {
   return (
-    <figure className="my-8 border hairline-border rounded-lg bg-surface p-4 sm:p-6 card-editorial">
+    <figure className="my-8 border hairline-border rounded bg-surface p-4 sm:p-6">
       <div className="flex items-center justify-between pb-3 mb-4 border-b hairline-b font-mono text-[11px] text-text-muted">
-        <span className="uppercase tracking-wider">
+        <span className="font-semibold text-text">
           Dual-Level Retrieval Pipeline
         </span>
         <span className="text-text-faint">LightRAG · Gemini 2.5 Flash</span>
@@ -24,9 +24,9 @@ export function GraphRAGDiagram() {
               y="110"
               width="100"
               height="70"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -54,7 +54,7 @@ export function GraphRAGDiagram() {
 
           <path
             d="M 125 145 L 175 145"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
           />
 
@@ -65,9 +65,9 @@ export function GraphRAGDiagram() {
               y="95"
               width="110"
               height="100"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1A56DB"
               strokeWidth="1"
             />
             <text
@@ -85,11 +85,12 @@ export function GraphRAGDiagram() {
               x="230"
               y="148"
               textAnchor="middle"
-              fill="var(--accent)"
+              fill="#1A56DB"
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
+              fontWeight="600"
             >
-              Router
+              Dual Router
             </text>
             <text
               x="230"
@@ -99,20 +100,20 @@ export function GraphRAGDiagram() {
               fontSize="9"
               fontFamily="var(--font-geist-mono)"
             >
-              Hybrid / Dual
+              Hybrid Retrieval
             </text>
           </g>
 
           {/* Dual Paths */}
           <path
             d="M 285 125 C 320 125, 330 65, 360 65"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
             fill="none"
           />
           <path
             d="M 285 165 C 320 165, 330 225, 360 225"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
             fill="none"
           />
@@ -124,9 +125,9 @@ export function GraphRAGDiagram() {
               y="30"
               width="130"
               height="70"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#00D2B4"
               strokeWidth="1"
             />
             <text
@@ -144,9 +145,10 @@ export function GraphRAGDiagram() {
               x="425"
               y="76"
               textAnchor="middle"
-              fill="var(--chart-2)"
+              fill="#00D2B4"
               fontSize="9"
               fontFamily="var(--font-geist-mono)"
+              fontWeight="600"
             >
               NanoVectorDB
             </text>
@@ -169,9 +171,9 @@ export function GraphRAGDiagram() {
               y="190"
               width="130"
               height="70"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -189,7 +191,7 @@ export function GraphRAGDiagram() {
               x="425"
               y="236"
               textAnchor="middle"
-              fill="var(--chart-3)"
+              fill="var(--text-muted)"
               fontSize="9"
               fontFamily="var(--font-geist-mono)"
             >
@@ -210,13 +212,13 @@ export function GraphRAGDiagram() {
           {/* Converge to Synthesis */}
           <path
             d="M 490 65 C 515 65, 520 125, 535 125"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
             fill="none"
           />
           <path
             d="M 490 225 C 515 225, 520 165, 535 165"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.5"
             fill="none"
           />
@@ -228,9 +230,9 @@ export function GraphRAGDiagram() {
               y="105"
               width="85"
               height="80"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--accent)"
+              stroke="#1A56DB"
               strokeWidth="1.5"
             />
             <text
@@ -248,10 +250,10 @@ export function GraphRAGDiagram() {
               x="577"
               y="152"
               textAnchor="middle"
-              fill="var(--accent)"
+              fill="#1A56DB"
               fontSize="9"
               fontFamily="var(--font-geist-mono)"
-              fontWeight="500"
+              fontWeight="600"
             >
               Gemini 2.5
             </text>
@@ -259,10 +261,10 @@ export function GraphRAGDiagram() {
               x="577"
               y="167"
               textAnchor="middle"
-              fill="var(--accent)"
+              fill="#1A56DB"
               fontSize="9"
               fontFamily="var(--font-geist-mono)"
-              fontWeight="500"
+              fontWeight="600"
             >
               Flash
             </text>

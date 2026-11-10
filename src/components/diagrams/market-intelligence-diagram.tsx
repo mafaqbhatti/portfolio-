@@ -2,9 +2,9 @@ import React from "react";
 
 export function MarketIntelligenceDiagram() {
   return (
-    <figure className="my-8 border hairline-border rounded-lg bg-surface p-4 sm:p-6 card-editorial">
+    <figure className="my-8 border hairline-border rounded bg-surface p-4 sm:p-6">
       <div className="flex items-center justify-between pb-3 mb-4 border-b hairline-b font-mono text-[11px] text-text-muted">
-        <span className="uppercase tracking-wider">
+        <span className="font-semibold text-text">
           Multi-Agent Execution Graph
         </span>
         <span className="text-text-faint">LangGraph · Groq (LLaMA-3.3)</span>
@@ -24,9 +24,9 @@ export function MarketIntelligenceDiagram() {
               y="125"
               width="100"
               height="70"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -52,34 +52,34 @@ export function MarketIntelligenceDiagram() {
             </text>
           </g>
 
-          {/* Fan-Out Curves */}
+          {/* Fan-Out Curves (Slate #1E2638) */}
           <path
             d="M 125 160 C 180 160, 200 45, 245 45"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
             d="M 125 160 C 180 160, 200 102, 245 102"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
             d="M 125 160 C 180 160, 200 160, 245 160"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
             d="M 125 160 C 180 160, 200 218, 245 218"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
             d="M 125 160 C 180 160, 200 275, 245 275"
-            stroke="var(--border)"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
@@ -91,9 +91,9 @@ export function MarketIntelligenceDiagram() {
               y="25"
               width="130"
               height="40"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -104,7 +104,7 @@ export function MarketIntelligenceDiagram() {
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
             >
-              Price Action Agent
+              01 Price Action
             </text>
 
             <rect
@@ -112,9 +112,9 @@ export function MarketIntelligenceDiagram() {
               y="82"
               width="130"
               height="40"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -125,7 +125,7 @@ export function MarketIntelligenceDiagram() {
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
             >
-              Sentiment Agent
+              02 Sentiment
             </text>
 
             <rect
@@ -133,9 +133,9 @@ export function MarketIntelligenceDiagram() {
               y="140"
               width="130"
               height="40"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -146,7 +146,7 @@ export function MarketIntelligenceDiagram() {
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
             >
-              On-Chain Agent
+              03 On-Chain
             </text>
 
             <rect
@@ -154,9 +154,9 @@ export function MarketIntelligenceDiagram() {
               y="198"
               width="130"
               height="40"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -167,7 +167,7 @@ export function MarketIntelligenceDiagram() {
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
             >
-              Macro Agent
+              04 Macro
             </text>
 
             <rect
@@ -175,9 +175,9 @@ export function MarketIntelligenceDiagram() {
               y="255"
               width="130"
               height="40"
-              rx="4"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--border)"
+              stroke="#1E2638"
               strokeWidth="1"
             />
             <text
@@ -188,83 +188,84 @@ export function MarketIntelligenceDiagram() {
               fontSize="10"
               fontFamily="var(--font-geist-mono)"
             >
-              Risk Agent
+              05 Risk Management
             </text>
           </g>
 
           {/* Fan-In Curves */}
           <path
-            d="M 375 45 C 420 45, 440 160, 485 160"
-            stroke="var(--border)"
+            d="M 375 45 C 420 45, 435 160, 480 160"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
-            d="M 375 102 C 420 102, 440 160, 485 160"
-            stroke="var(--border)"
+            d="M 375 102 C 420 102, 435 160, 480 160"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
-            d="M 375 160 C 420 160, 440 160, 485 160"
-            stroke="var(--border)"
+            d="M 375 160 L 480 160"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
-            d="M 375 218 C 420 218, 440 160, 485 160"
-            stroke="var(--border)"
+            d="M 375 218 C 420 218, 435 160, 480 160"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
           <path
-            d="M 375 275 C 420 275, 440 160, 485 160"
-            stroke="var(--border)"
+            d="M 375 275 C 420 275, 435 160, 480 160"
+            stroke="#1E2638"
             strokeWidth="1.25"
             fill="none"
           />
 
-          {/* Output Verdict Node */}
+          {/* Verdict Synthesis Node */}
           <g>
             <rect
-              x="485"
+              x="480"
               y="125"
               width="130"
               height="70"
-              rx="6"
+              rx="2"
               fill="var(--surface-2)"
-              stroke="var(--accent)"
+              stroke="#1A56DB"
               strokeWidth="1.5"
             />
             <text
-              x="550"
-              y="155"
+              x="545"
+              y="152"
               textAnchor="middle"
-              fill="var(--text)"
-              fontSize="11"
+              fill="#00D2B4"
+              fontSize="10"
               fontFamily="var(--font-geist-mono)"
               fontWeight="600"
             >
-              TRADING VERDICT
+              VERDICT
             </text>
             <text
-              x="550"
-              y="172"
+              x="545"
+              y="170"
               textAnchor="middle"
-              fill="var(--accent)"
-              fontSize="9"
+              fill="var(--text)"
+              fontSize="10"
               fontFamily="var(--font-geist-mono)"
+              fontWeight="500"
             >
-              LangGraph Fan-In
+              Synthesized Decision
             </text>
           </g>
         </svg>
       </div>
 
       <figcaption className="mt-3 pt-2.5 border-t hairline-t font-mono text-[11px] text-text-faint">
-        Figure 3: Concurrent fan-out / fan-in multi-agent graph. Five
-        domain-specialist agents execute concurrently on Groq-hosted LLaMA-3.3,
-        delivering a 5× end-to-end latency reduction over serial chains.
+        Figure 3: LangGraph multi-agent execution topology. Five specialized
+        agents execute concurrently via Groq LPU, converging at an aggregation
+        barrier for weighted synthesis.
       </figcaption>
     </figure>
   );

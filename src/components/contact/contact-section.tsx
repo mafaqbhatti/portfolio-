@@ -11,7 +11,7 @@ export function ContactSection() {
     >
       {/* Section Header */}
       <div className="mb-12">
-        <span className="font-mono-label text-text-muted">05 / Contact</span>
+        <span className="font-mono text-xs text-text-muted">05 / Contact</span>
         <h2 className="font-h2 text-text mt-2">
           Start an engineering conversation.
         </h2>
@@ -21,9 +21,9 @@ export function ContactSection() {
         </p>
       </div>
 
-      <div className="border hairline-border rounded-lg bg-surface p-8 sm:p-12 space-y-8 card-editorial">
+      <div className="border hairline-border rounded bg-surface p-8 sm:p-12 space-y-8">
         <div>
-          <div className="font-mono text-xs text-text-muted uppercase tracking-wider mb-3">
+          <div className="font-mono text-xs text-text-muted mb-3 font-medium">
             Primary Email (Click or Copy)
           </div>
           <ObfuscatedEmail large={true} showCopyButton={true} />
@@ -31,7 +31,7 @@ export function ContactSection() {
 
         <div className="pt-8 border-t hairline-t grid grid-cols-1 sm:grid-cols-3 gap-6 font-mono text-xs">
           <div>
-            <div className="text-text-muted uppercase tracking-wider text-[11px] mb-1">
+            <div className="text-text-muted text-xs mb-1 font-medium">
               Code & Projects
             </div>
             <a
@@ -46,7 +46,7 @@ export function ContactSection() {
           </div>
 
           <div>
-            <div className="text-text-muted uppercase tracking-wider text-[11px] mb-1">
+            <div className="text-text-muted text-xs mb-1 font-medium">
               Network
             </div>
             <a
@@ -61,7 +61,7 @@ export function ContactSection() {
           </div>
 
           <div>
-            <div className="text-text-muted uppercase tracking-wider text-[11px] mb-1">
+            <div className="text-text-muted text-xs mb-1 font-medium">
               Document
             </div>
             <Link

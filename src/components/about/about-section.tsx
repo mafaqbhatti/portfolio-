@@ -16,7 +16,7 @@ export function AboutSection() {
     >
       {/* Section Header */}
       <div className="mb-12">
-        <span className="font-mono-label text-text-muted">03 / About</span>
+        <span className="font-mono text-xs text-text-muted">03 / About</span>
         <h2 className="font-h2 text-text mt-2">
           Systems engineering, evaluation, and background.
         </h2>
@@ -78,8 +78,8 @@ export function AboutSection() {
         </div>
 
         {/* Education & Academic Credentials (Right / Sidebar) */}
-        <div className="md:col-span-4 border hairline-border rounded-lg bg-surface p-6 font-mono text-xs space-y-4 card-editorial">
-          <div className="text-text-muted uppercase tracking-wider text-[11px] pb-2 border-b hairline-b">
+        <div className="md:col-span-4 border hairline-border rounded bg-surface p-6 font-mono text-xs space-y-4">
+          <div className="text-text-muted text-xs font-mono font-medium pb-2 border-b hairline-b">
             Academic Background
           </div>
 

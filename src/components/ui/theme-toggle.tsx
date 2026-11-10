@@ -31,11 +31,10 @@ export function ThemeToggle() {
     return (
       <button
         type="button"
-        className="px-2 py-1 rounded border hairline-border font-mono text-xs text-text-muted flex items-center gap-1.5"
+        className="px-2.5 py-1 rounded border hairline-border font-mono text-[11px] text-text-muted bg-surface"
         aria-label="Toggle theme"
       >
-        <span className="w-2 h-2 rounded-full bg-accent" />
-        <span className="uppercase text-[11px] tracking-wider">DARK</span>
+        <span className="uppercase tracking-wider">theme: dark</span>
       </button>
     );
   }
@@ -44,11 +43,10 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="px-2 py-1 rounded border hairline-border font-mono text-xs text-text-muted hover:text-text hover:border-text transition-colors duration-150 flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      className="px-2.5 py-1 rounded border hairline-border font-mono text-[11px] text-text-muted hover:text-text hover:border-text-muted transition-colors duration-150 bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       aria-label={`Current theme is ${theme}. Switch to ${theme === "dark" ? "light" : "dark"} theme`}
     >
-      <span className="w-2 h-2 rounded-full bg-accent" />
-      <span className="uppercase text-[11px] tracking-wider">{theme}</span>
+      <span className="uppercase tracking-wider">theme: {theme}</span>
     </button>
   );
 }

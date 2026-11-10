@@ -10,7 +10,9 @@ export function ExperienceSection() {
     >
       {/* Section Header */}
       <div className="mb-12">
-        <span className="font-mono-label text-text-muted">02 / Experience</span>
+        <span className="font-mono text-xs text-text-muted">
+          02 / Experience
+        </span>
         <h2 className="font-h2 text-text mt-2">
           Engineering roles and delivered outcomes.
         </h2>
@@ -31,11 +33,11 @@ export function ExperienceSection() {
             {/* Role, Company & Bullets (Right column) */}
             <div className="md:col-span-9">
               <div className="flex flex-wrap items-baseline gap-2 mb-3">
-                <h3 className="font-serif text-xl sm:text-2xl text-text">
+                <h3 className="font-display font-bold text-xl sm:text-2xl text-text">
                   {exp.role}
                 </h3>
                 <span className="font-mono text-sm text-text-muted">
-                  · {exp.company}, {exp.location}
+                  / {exp.company}, {exp.location}
                 </span>
               </div>
 

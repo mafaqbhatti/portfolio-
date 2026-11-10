@@ -9,18 +9,18 @@ import { TodoMarker } from "@/components/ui/todo-marker";
 export function SelectedWork() {
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
 
-  // Preview graphics for hover preview
+  // Architectural preview cards
   const getPreviewContent = (slug: string) => {
     switch (slug) {
       case "flood-forecasting":
         return (
-          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded card-editorial shadow-2xl">
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded shadow-xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>SAR + SATELLITE FUSION</span>
-              <span className="text-accent font-semibold">IoU 0.65</span>
+              <span className="text-cyan font-semibold">IoU 0.65</span>
             </div>
             <div className="py-2">
-              <div className="text-xs font-mono text-text font-medium mb-1">
+              <div className="text-xs font-mono text-text font-bold mb-1">
                 ResNet18 + ConvLSTM + U-Net
               </div>
               <div className="text-[11px] text-text-muted">
@@ -34,13 +34,13 @@ export function SelectedWork() {
         );
       case "finops-graphrag":
         return (
-          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded card-editorial shadow-2xl">
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded shadow-xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>LOCAL KNOWLEDGE GRAPH</span>
               <span className="text-accent font-semibold">50× COST</span>
             </div>
             <div className="py-2">
-              <div className="text-xs font-mono text-text font-medium mb-1">
+              <div className="text-xs font-mono text-text font-bold mb-1">
                 LightRAG + Gemini 2.5 Flash
               </div>
               <div className="text-[11px] text-text-muted">
@@ -54,13 +54,13 @@ export function SelectedWork() {
         );
       case "market-intelligence":
         return (
-          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded card-editorial shadow-2xl">
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded shadow-xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>FAN-OUT / FAN-IN MULTI-AGENT</span>
-              <span className="text-accent font-semibold">5× FASTER</span>
+              <span className="text-cyan font-semibold">5× FASTER</span>
             </div>
             <div className="py-2">
-              <div className="text-xs font-mono text-text font-medium mb-1">
+              <div className="text-xs font-mono text-text font-bold mb-1">
                 LangGraph + Groq LLaMA-3.3
               </div>
               <div className="text-[11px] text-text-muted">
@@ -80,12 +80,12 @@ export function SelectedWork() {
   return (
     <section
       id="work"
-      aria-label="Selected case studies and projects"
+      aria-label="Selected case studies and implementations"
       className="max-w-[1120px] mx-auto px-6 section-padding"
     >
       {/* Section Header */}
       <div className="mb-12">
-        <span className="font-mono-label text-text-muted">
+        <span className="font-mono text-xs text-text-muted">
           01 / Selected work
         </span>
         <h2 className="font-h2 text-text mt-2">
@@ -93,7 +93,7 @@ export function SelectedWork() {
         </h2>
       </div>
 
-      {/* Flagship Case Study Editorial Rows */}
+      {/* Flagship Case Study Dossiers */}
       <div className="relative border-t hairline-t divide-y divide-border">
         {flagshipProjects.map((project) => (
           <div
@@ -104,16 +104,16 @@ export function SelectedWork() {
           >
             <Link
               href={`/work/${project.slug}`}
-              className="py-8 sm:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-baseline transition-colors duration-150 group-hover:bg-surface/40 px-2 -mx-2 rounded"
+              className="py-8 sm:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-baseline transition-colors duration-150 group-hover:bg-surface-2/60 px-3 -mx-3 rounded"
             >
-              {/* Index Number */}
+              {/* Dossier Index */}
               <div className="md:col-span-1 font-mono text-sm text-text-muted">
                 {project.index}
               </div>
 
-              {/* Title & One-line outcome */}
+              {/* Title & Structured Outcome */}
               <div className="md:col-span-6">
-                <h3 className="font-serif text-2xl sm:text-3xl text-text group-hover:text-accent transition-colors duration-150">
+                <h3 className="font-display font-bold text-xl sm:text-2xl text-text group-hover:text-accent transition-colors duration-150">
                   {project.title}
                 </h3>
                 <p className="text-sm text-text-muted mt-1 leading-relaxed">
@@ -131,18 +131,18 @@ export function SelectedWork() {
                 {project.stack.slice(0, 3).join(" · ")}
               </div>
 
-              {/* Year & Arrow */}
+              {/* Year & Action Arrow */}
               <div className="md:col-span-2 flex items-center justify-between md:justify-end gap-3 font-mono text-xs text-text-muted">
                 <span>{project.year}</span>
-                <ArrowUpRight className="w-4 h-4 text-text-muted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-150" />
+                <ArrowUpRight className="w-4 h-4 text-text-muted group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-150" />
               </div>
             </Link>
 
-            {/* Desktop Hover Floating Preview Card */}
+            {/* Desktop Floating Preview Card */}
             {hoveredSlug === project.slug && (
               <div
                 aria-hidden="true"
-                className="hidden lg:block pointer-events-none absolute right-12 top-1/2 -translate-y-1/2 z-30 w-72 h-44 shadow-lg animate-in fade-in duration-150"
+                className="hidden lg:block pointer-events-none absolute right-12 top-1/2 -translate-y-1/2 z-30 w-72 h-44 animate-in fade-in duration-150"
               >
                 {getPreviewContent(project.slug)}
               </div>
@@ -151,10 +151,10 @@ export function SelectedWork() {
         ))}
       </div>
 
-      {/* Compact "More" Table */}
+      {/* Compact Engineering Index Table */}
       <div className="mt-20">
         <div className="mb-6 flex items-baseline justify-between border-b hairline-b pb-3">
-          <span className="font-mono-label text-text-muted">
+          <span className="font-mono text-xs text-text-muted">
             More / Additional implementations
           </span>
           <span className="font-mono text-xs text-text-faint">
@@ -178,7 +178,7 @@ export function SelectedWork() {
               {compactProjects.map((item) => (
                 <tr
                   key={item.name}
-                  className="hover:bg-surface/30 transition-colors duration-150"
+                  className="hover:bg-surface-2/40 transition-colors duration-150"
                 >
                   <td className="py-4 pr-6 text-text font-medium whitespace-nowrap">
                     {item.name}

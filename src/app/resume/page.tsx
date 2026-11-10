@@ -51,11 +51,11 @@ export default function ResumePage() {
       </div>
 
       {/* Résumé Document Sheet */}
-      <article className="border hairline-border rounded-lg bg-surface p-8 sm:p-12 print:border-none print:p-0 print:bg-transparent space-y-10">
+      <article className="border hairline-border rounded bg-surface p-8 sm:p-12 print:border-none print:p-0 print:bg-transparent space-y-10">
         {/* Document Header */}
         <header className="border-b hairline-b pb-8">
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
-            <h1 className="font-serif text-3xl sm:text-4xl text-text font-normal tracking-tight">
+            <h1 className="font-display text-3xl sm:text-4xl text-text font-bold tracking-tight">
               {identity.fullName}
             </h1>
             <span className="font-mono text-sm text-accent font-medium">
@@ -98,7 +98,7 @@ export default function ResumePage() {
         <section aria-labelledby="resume-education">
           <h2
             id="resume-education"
-            className="font-mono text-xs uppercase tracking-wider text-text font-semibold pb-2 border-b hairline-b mb-4"
+            className="font-mono text-xs text-text font-semibold pb-2 border-b hairline-b mb-4"
           >
             Education
           </h2>
@@ -128,7 +128,7 @@ export default function ResumePage() {
         <section aria-labelledby="resume-experience">
           <h2
             id="resume-experience"
-            className="font-mono text-xs uppercase tracking-wider text-text font-semibold pb-2 border-b hairline-b mb-6"
+            className="font-mono text-xs text-text font-semibold pb-2 border-b hairline-b mb-6"
           >
             Professional Experience
           </h2>
@@ -170,7 +170,7 @@ export default function ResumePage() {
         <section aria-labelledby="resume-projects">
           <h2
             id="resume-projects"
-            className="font-mono text-xs uppercase tracking-wider text-text font-semibold pb-2 border-b hairline-b mb-6"
+            className="font-mono text-xs text-text font-semibold pb-2 border-b hairline-b mb-6"
           >
             Flagship Engineering Implementations
           </h2>
@@ -204,7 +204,7 @@ export default function ResumePage() {
         <section aria-labelledby="resume-stack">
           <h2
             id="resume-stack"
-            className="font-mono text-xs uppercase tracking-wider text-text font-semibold pb-2 border-b hairline-b mb-4"
+            className="font-mono text-xs text-text font-semibold pb-2 border-b hairline-b mb-4"
           >
             Technical Stack
           </h2>

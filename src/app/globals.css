@@ -1,54 +1,64 @@
+/* hallmark: style=swiss-systems genre=modern-minimal version=2.0.0 */
+/* critique: architectural swiss typography with space grotesk and signal cobalt; rigorous 12-column grid and hairline precision */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   /* =========================================================================
-     DARK THEME (Default) — Staff Editorial Obsidian
-     Warm charcoal-ink base, luminous alpha borders, refined phosphor chartreuse
+     DARK THEME (Default) — Swiss Systems (Option 2)
+     Deep Technical Slate, Architectural Slab, Signal Cobalt, Telemetry Cyan
      ========================================================================= */
-  --bg: #0C0D0E;
-  --surface: #131417;
-  --surface-2: #191B1F;
+  --bg: #0A0D14;
+  --surface: #101522;
+  --surface-2: #171F30;
   --border: rgba(255, 255, 255, 0.08);
   --border-subtle: rgba(255, 255, 255, 0.04);
   --border-hover: rgba(255, 255, 255, 0.16);
-  --text: #F0F0EC;
-  --text-muted: #9BA1AC;
-  --text-faint: #6D737F;
-  --accent: #CEF535;
-  --accent-ink: #0C0D0E;
-  --accent-subtle: rgba(206, 245, 53, 0.12);
-  --highlight: #CEF535;
-  --chart-1: #CEF535;
-  --chart-2: #7DB7FF;
-  --chart-3: #FF8A6B;
+  --text: #F1F4F9;
+  --text-muted: #8F9CAE;
+  --text-faint: #5A677A;
+  --accent: #1A56DB;
+  --accent-ink: #FFFFFF;
+  --accent-subtle: rgba(26, 86, 219, 0.16);
+  --telemetry-cyan: #00D2B4;
+  --highlight: #1A56DB;
+  --chart-1: #1A56DB;
+  --chart-2: #00D2B4;
+  --chart-3: #FF5C35;
 }
 
 html.light {
   /* =========================================================================
-     LIGHT THEME — Editorial Warm Paper
-     Natural warm ivory paper base with deep forest accent
+     LIGHT THEME — Swiss Systems Light Slate
+     Clean architectural paper with signal cobalt structural accents
      ========================================================================= */
-  --bg: #FAFAF7;
+  --bg: #F8FAFC;
   --surface: #FFFFFF;
-  --surface-2: #F2F2EC;
-  --border: #E4E4DD;
-  --border-subtle: #EEEEEC;
-  --border-hover: #D0D0C8;
-  --text: #111315;
-  --text-muted: #555C66;
-  --text-faint: #8E95A0;
-  --accent: #3F6B00;
+  --surface-2: #F1F5F9;
+  --border: rgba(15, 23, 42, 0.08);
+  --border-subtle: rgba(15, 23, 42, 0.04);
+  --border-hover: rgba(15, 23, 42, 0.16);
+  --text: #0F172A;
+  --text-muted: #475569;
+  --text-faint: #94A3B8;
+  --accent: #1A56DB;
   --accent-ink: #FFFFFF;
-  --accent-subtle: rgba(63, 107, 0, 0.08);
-  --highlight: #D4FF3A;
-  --chart-1: #3F6B00;
-  --chart-2: #2563EB;
-  --chart-3: #EA580C;
+  --accent-subtle: rgba(26, 86, 219, 0.10);
+  --telemetry-cyan: #009E88;
+  --highlight: #1A56DB;
+  --chart-1: #1A56DB;
+  --chart-2: #009E88;
+  --chart-3: #E11D48;
 }
 
 @layer base {
+  html,
+  body {
+    overflow-x: clip;
+  }
+
   * {
     border-color: var(--border);
   }
@@ -57,61 +67,70 @@ html.light {
     background-color: var(--bg);
     color: var(--text);
     font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
     line-height: 1.65;
-    font-size: 1.0625rem;
+    font-size: 1rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
   }
 
-  /* Accessible focus ring with subtle offset */
+  /* Accessible instant focus ring per Hallmark Floor Rule 6 */
   :focus-visible {
     outline: 2px solid var(--accent);
-    outline-offset: 3px;
+    outline-offset: 2px;
   }
 
   /* Selection styling */
   ::selection {
-    background-color: var(--highlight);
-    color: #0C0D0E;
+    background-color: var(--accent);
+    color: var(--accent-ink);
   }
 }
 
-/* Fluid typography clamps */
+/* Swiss Modernist Headings */
 .font-hero {
-  font-family: var(--font-instrument-serif), Georgia, serif;
-  font-size: clamp(2.75rem, 6vw + 1rem, 5.5rem);
-  line-height: 1.02;
-  letter-spacing: -0.02em;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.75rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 .font-h2 {
-  font-family: var(--font-instrument-serif), Georgia, serif;
-  font-size: clamp(2rem, 3.5vw + 1rem, 3.25rem);
-  line-height: 1.1;
-  letter-spacing: -0.015em;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-size: clamp(1.85rem, 3.2vw + 0.8rem, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 .font-h3 {
-  font-family: var(--font-instrument-serif), Georgia, serif;
-  font-size: 1.5rem;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  font-size: 1.35rem;
   line-height: 1.25;
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
 .font-mono-label {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
 }
 
 .section-padding {
-  padding-top: clamp(88px, 10vw, 140px);
-  padding-bottom: clamp(88px, 10vw, 140px);
+  padding-top: clamp(80px, 9vw, 128px);
+  padding-bottom: clamp(80px, 9vw, 128px);
 }
 
-.hairline-border {
+.hairline-border,
+.border-hairline {
   border-width: 1px;
   border-color: var(--border);
 }
@@ -126,15 +145,21 @@ html.light {
   border-top-color: var(--border);
 }
 
-/* Subtle card elevation with micro-inner-highlight */
+/* Swiss 12-Column Grid System */
+.grid-swiss {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Architectural Card Elevation */
 .card-editorial {
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
 }
 
-/* Respect user's motion preferences */
+/* Respect user's motion preferences per Hallmark Floor Rule 7 */
 @media (prefers-reduced-motion: reduce) {
   *,
   ::before,
