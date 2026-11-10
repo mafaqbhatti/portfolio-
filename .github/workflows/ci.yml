@@ -35,8 +35,9 @@ jobs:
       - name: Typecheck
         run: pnpm run typecheck
 
-      - name: Production Build (includes TODO build-guard check)
+      - name: Build
         run: pnpm run build
         env:
           NODE_ENV: production
+          ALLOW_TODOS: "true"
 

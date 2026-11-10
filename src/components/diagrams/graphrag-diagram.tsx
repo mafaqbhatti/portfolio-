@@ -52,11 +52,7 @@ export function GraphRAGDiagram() {
             </text>
           </g>
 
-          <path
-            d="M 125 145 L 175 145"
-            stroke="#1E2638"
-            strokeWidth="1.5"
-          />
+          <path d="M 125 145 L 175 145" stroke="#1E2638" strokeWidth="1.5" />
 
           {/* Router */}
           <g>

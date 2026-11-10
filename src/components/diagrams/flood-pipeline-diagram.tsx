@@ -167,11 +167,7 @@ export function FloodPipelineDiagram() {
           </g>
 
           {/* Connective Line 1 */}
-          <path
-            d="M 150 160 L 195 160"
-            stroke="#1E2638"
-            strokeWidth="1.5"
-          />
+          <path d="M 150 160 L 195 160" stroke="#1E2638" strokeWidth="1.5" />
 
           {/* Group 2: ResNet18 Spatial Encoder */}
           <g>
@@ -241,11 +237,7 @@ export function FloodPipelineDiagram() {
           </g>
 
           {/* Connective Line 2 */}
-          <path
-            d="M 310 160 L 350 160"
-            stroke="#1E2638"
-            strokeWidth="1.5"
-          />
+          <path d="M 310 160 L 350 160" stroke="#1E2638" strokeWidth="1.5" />
 
           {/* Group 3: ConvLSTM Temporal Modeling */}
           <g>
@@ -315,11 +307,7 @@ export function FloodPipelineDiagram() {
           </g>
 
           {/* Connective Line 3 */}
-          <path
-            d="M 465 160 L 505 160"
-            stroke="#1E2638"
-            strokeWidth="1.5"
-          />
+          <path d="M 465 160 L 505 160" stroke="#1E2638" strokeWidth="1.5" />
 
           {/* Group 4: U-Net Decoder & MC Dropout */}
           <g>

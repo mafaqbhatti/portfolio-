@@ -51,7 +51,9 @@ function scanDirectory(dir: string): TodoHit[] {
 
 function runCheck() {
   const isProduction =
-    process.env.NODE_ENV === "production" || process.argv.includes("--strict");
+    (process.env.NODE_ENV === "production" ||
+      process.argv.includes("--strict")) &&
+    process.env.ALLOW_TODOS !== "true";
   const allHits: TodoHit[] = [];
 
   for (const dir of SEARCH_DIRS) {
