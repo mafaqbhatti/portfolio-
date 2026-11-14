@@ -13,7 +13,7 @@ export function Header({ hasWritingPosts = false }: HeaderProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -21,13 +21,7 @@ export function Header({ hasWritingPosts = false }: HeaderProps) {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-40 w-full transition-colors duration-200 ${
-        scrolled
-          ? "bg-bg/95 backdrop-blur-none border-b hairline-b"
-          : "bg-bg border-b border-transparent"
-      }`}
-    >
+    <header data-scrolled={scrolled} className="site-header">
       <div className="max-w-[1120px] mx-auto px-6 h-16 flex items-center justify-between">
         {/* Wordmark (Space Grotesk) */}
         <Link

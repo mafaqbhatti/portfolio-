@@ -48,10 +48,12 @@ export const flagshipProjects: FlagshipProject[] = [
     stack: [
       "LightRAG",
       "Gemini 2.5 Flash",
+      "BAAI/bge-small-en-v1.5",
       "NanoVectorDB",
+      "GraphML",
       "FastAPI",
+      "Docker",
       "AWS EC2",
-      "AWS S3",
     ],
     heroMetric: {
       value: "50×",
@@ -60,13 +62,13 @@ export const flagshipProjects: FlagshipProject[] = [
     metricsFootnote:
       "Measured token consumption and API cost per retrieval against traditional dense retrieval architectures.",
     summary: [
-      "Engineered an entity–relationship GraphRAG engine using LightRAG and Gemini 2.5 Flash for dual-level knowledge extraction.",
-      "Combines local entity neighborhoods and global structural graph summarization with low-latency vector search in NanoVectorDB.",
-      "Hosted on AWS EC2 with S3 graph snapshot persistence, exposed through FastAPI microservices.",
+      "Architected a zero-managed-DB knowledge graph retrieval engine using LightRAG (HKUDS) and Gemini 2.5 Flash for dual-level entity-relationship extraction.",
+      "Eliminated hosted embedding bills by running CPU-optimized BAAI/bge-small-en-v1.5 locally, paired with a custom UTF-8 tokenizer and sliding-window rate limiter.",
+      "Supports 5 distinct retrieval modes (naive, local, global, hybrid, mix) over local GraphML and NanoVectorDB, containerized on an AWS EC2 t3.micro instance.",
     ],
-    markers: [
-      "TODO(owner): name the baseline pipeline, dataset, how cost was measured, accuracy comparison, repo and demo links",
-    ],
+    repoUrl: "https://github.com/mafaqbhatti/FinOps-Optimized-GraphRAG",
+    demoUrl: "http://54.173.55.110:8000",
+    markers: [],
   },
   {
     slug: "market-intelligence",

@@ -48,7 +48,7 @@ export function Footer() {
 
         {/* Minimalist Monospace Technical Coordinates */}
         <div className="pt-4 border-t border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[11px] text-text-faint">
-          <span>LOC: 33.6844° N, 73.0479° E // ISLAMABAD, PK</span>
+          <span>Islamabad, PK</span>
           <span>ARCH: SWISS SYSTEMS MODERNISM // NEXT.JS 15</span>
         </div>
       </div>

@@ -7,7 +7,9 @@ export function GraphRAGDiagram() {
         <span className="font-semibold text-text">
           Dual-Level Retrieval Pipeline
         </span>
-        <span className="text-text-faint">LightRAG · Gemini 2.5 Flash</span>
+        <span className="text-text-faint">
+          LightRAG · Gemini 2.5 Flash · BGE-small
+        </span>
       </div>
 
       <div className="w-full aspect-[640/300] flex items-center justify-center">

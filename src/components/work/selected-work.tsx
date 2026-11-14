@@ -48,7 +48,7 @@ export function SelectedWork() {
               </div>
             </div>
             <div className="font-mono text-[10px] text-text-faint">
-              FastAPI · AWS EC2 · AWS S3
+              BGE-small · NanoVectorDB · FastAPI · AWS EC2
             </div>
           </div>
         );
