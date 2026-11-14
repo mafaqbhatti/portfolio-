@@ -96,6 +96,41 @@ export const flagshipProjects: FlagshipProject[] = [
       'TODO(owner): confirm the exact agent list (the old site\'s diagram showed six nodes: Market Data, Price Action, Sentiment, On-Chain, Macro, Risk; reconcile with "5 agents"), measurement method, repo link',
     ],
   },
+  {
+    slug: "hireflow-recruitment",
+    index: "04",
+    title: "HireFlow AI Recruitment Platform",
+    headline:
+      "Autonomous 5-agent AI recruitment pipeline compressing weeks into 3 minutes",
+    outcome:
+      "2–4 week hiring cycle compressed into ~3 minutes of autonomous processing",
+    role: "Lead AI Systems Architect",
+    year: "2026",
+    timeframe: "Feb 2026 – Apr 2026",
+    stack: [
+      "Groq (LLaMA 3 70B)",
+      "Apache Kafka",
+      "PostgreSQL 16",
+      "Redis 7",
+      "Node.js 20",
+      "Next.js 14",
+      "Streamlit",
+      "Docker",
+    ],
+    heroMetric: {
+      value: "3 min",
+      label: "Active turnaround",
+    },
+    metricsFootnote:
+      "Benchmarked active evaluation turnaround across multi-stage candidate workflows from resume screening to executive hiring verdict.",
+    summary: [
+      "Architected an event-driven 5-agent autonomous recruitment pipeline powered by Apache Kafka 7.5 and Groq-hosted LLaMA 3 70B.",
+      "Autonomously screens in-memory decrypted resumes (AES-256), generates bespoke technical assessments, grades submissions, conducts live Web Speech voice interviews, and synthesizes executive hiring dossiers.",
+      "Enforces strict multi-tenant data isolation via PostgreSQL 16/Prisma, sub-millisecond Redis stage caching, real-time Socket.io Kanban updates, and dual Next.js 14 / Streamlit frontends.",
+    ],
+    repoUrl: "https://github.com/mafaqbhatti/AgenticHire-",
+    markers: [],
+  },
 ];
 
 export const compactProjects: CompactProject[] = [
@@ -111,13 +146,6 @@ export const compactProjects: CompactProject[] = [
     tech: "CNN · Flask · DVC · MLflow · GitHub Actions",
     description:
       "Automated model retraining and deployment pipeline with data versioning and experiment tracking.",
-    linkMarker: "TODO(owner): repository/demo link",
-  },
-  {
-    name: "HireFlow AI Recruitment Platform",
-    tech: "LLMs · Automated Screening · Full-Stack",
-    description:
-      "AI-assisted candidate screening, resume parsing, and structured technical interview evaluation.",
     linkMarker: "TODO(owner): repository/demo link",
   },
   {

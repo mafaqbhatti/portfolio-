@@ -12,9 +12,14 @@ import { TodoMarker } from "@/components/ui/todo-marker";
 export function MarketIntelligenceStudy() {
   const prevProject = flagshipProjects[1];
   const project = flagshipProjects[2];
+  const nextProject = flagshipProjects[3];
 
   return (
-    <CaseStudyLayout project={project} prevProject={prevProject}>
+    <CaseStudyLayout
+      project={project}
+      prevProject={prevProject}
+      nextProject={nextProject}
+    >
       {/* 1. Summary & Facts Bar */}
       <Section
         id="summary"

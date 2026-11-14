@@ -4,6 +4,7 @@ import { flagshipProjects } from "@/content/projects";
 import { FloodForecastingStudy } from "@/components/work/flood-forecasting-study";
 import { FinOpsGraphRAGStudy } from "@/components/work/finops-graphrag-study";
 import { MarketIntelligenceStudy } from "@/components/work/market-intelligence-study";
+import { HireFlowStudy } from "@/components/work/hireflow-study";
 
 interface PageProps {
   params: Promise<{
@@ -55,6 +56,8 @@ export default async function CaseStudyPage({ params }: PageProps) {
       return <FinOpsGraphRAGStudy />;
     case "market-intelligence":
       return <MarketIntelligenceStudy />;
+    case "hireflow-recruitment":
+      return <HireFlowStudy />;
     default:
       notFound();
   }

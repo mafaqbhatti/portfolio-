@@ -72,6 +72,27 @@ export function SelectedWork() {
             </div>
           </div>
         );
+      case "hireflow-recruitment":
+        return (
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded shadow-xl">
+            <div className="font-mono text-[10px] text-text-muted flex justify-between">
+              <span>AUTONOMOUS AGENT PIPELINE</span>
+              <span className="text-cyan font-semibold">3-MIN CYCLE</span>
+            </div>
+            <div className="py-2">
+              <div className="text-xs font-mono text-text font-bold mb-1">
+                5-Agent Swarm · Apache Kafka · Redis
+              </div>
+              <div className="text-[11px] text-text-muted">
+                Screening, assessment, live voice interview & executive
+                synthesis
+              </div>
+            </div>
+            <div className="font-mono text-[10px] text-text-faint">
+              Groq LLaMA 3 70B · Next.js 14 · Streamlit
+            </div>
+          </div>
+        );
       default:
         return null;
     }

@@ -24,6 +24,11 @@ const ROUTES_TO_TEST: RouteCheck[] = [
     expectedStatus: 200,
     description: "Flagship Case Study 3",
   },
+  {
+    path: "/work/hireflow-recruitment",
+    expectedStatus: 200,
+    description: "Flagship Case Study 4 (HireFlow / AgenticHire)",
+  },
   { path: "/robots.txt", expectedStatus: 200, description: "Robots.txt" },
   { path: "/sitemap.xml", expectedStatus: 200, description: "Sitemap.xml" },
   {

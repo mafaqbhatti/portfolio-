@@ -6,6 +6,7 @@ const PAGES = [
   "/work/flood-forecasting",
   "/work/finops-graphrag",
   "/work/market-intelligence",
+  "/work/hireflow-recruitment",
 ];
 
 function fetchPage(path: string): Promise<string> {
