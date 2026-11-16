@@ -109,19 +109,28 @@ export const aboutCopy = {
     "What I’m looking for: Full-time AI/ML engineering roles and remote engineering teams shipping production LLM systems.",
 };
 
-// Maximum 25 items, grouped and linked to where each was used
+// Grouped by discipline and verified against active repositories & production systems
 export const stackCategories: StackCategory[] = [
   {
-    category: "Languages",
+    category: "Languages & Core Runtimes",
     skills: [
       {
         name: "Python",
         usedIn: [
           "Flood Forecasting",
           "FinOps GraphRAG",
-          "Market Intelligence",
-          "ITSOLERA",
-          "Horquva",
+          "MarketMind",
+          "AgenticHire",
+          "NeRF Turntable",
+          "MLOps Blueprint",
+        ],
+      },
+      {
+        name: "TypeScript / JavaScript",
+        usedIn: [
+          "MarketMind UI",
+          "AssessOps CBT Platform",
+          "Portfolio Website",
         ],
       },
       {
@@ -130,39 +139,109 @@ export const stackCategories: StackCategory[] = [
       },
       {
         name: "SQL",
-        usedIn: ["FinOps GraphRAG", "ITSOLERA automated pipelines"],
+        usedIn: [
+          "FinOps GraphRAG",
+          "Relational schema design",
+          "ITSOLERA pipelines",
+        ],
       },
     ],
   },
   {
-    category: "Machine Learning & Deep Learning",
+    category: "Machine Learning & 3D Vision",
     skills: [
-      { name: "PyTorch", usedIn: ["Flood Forecasting (ConvLSTM + U-Net)"] },
+      {
+        name: "PyTorch",
+        usedIn: [
+          "Flood Forecasting (ConvLSTM + U-Net)",
+          "NeRF Turntable (Volumetric Rendering)",
+        ],
+      },
+      {
+        name: "NeRF & COLMAP",
+        usedIn: [
+          "NeRF Turntable 3D (Structure-from-Motion & Instant-NGP view synthesis)",
+        ],
+      },
+      {
+        name: "scikit-learn",
+        usedIn: [
+          "MLOps Production Blueprint",
+          "ITSOLERA tabular baseline models",
+        ],
+      },
       {
         name: "TensorFlow",
         usedIn: ["ITSOLERA computer vision & forecasting models"],
       },
-      { name: "scikit-learn", usedIn: ["ITSOLERA tabular baseline models"] },
     ],
   },
   {
     category: "LLMs & Agentic Systems",
     skills: [
-      { name: "LangChain", usedIn: ["Prompt chaining & evaluation pipelines"] },
       {
         name: "LangGraph",
-        usedIn: ["Distributed Multi-Agent Market Intelligence System"],
+        usedIn: [
+          "MarketMind (Parallel fan-out multi-agent financial intelligence)",
+        ],
       },
-      { name: "LangSmith", usedIn: ["Agent trace inspection & evaluation"] },
-      { name: "LightRAG", usedIn: ["FinOps GraphRAG Engine"] },
+      {
+        name: "LightRAG",
+        usedIn: [
+          "FinOps GraphRAG Engine (Dual-level knowledge graph entity extraction)",
+        ],
+      },
+      {
+        name: "LangChain",
+        usedIn: [
+          "AgenticHire (Multi-agent resume analysis)",
+          "Prompt chaining & evaluation",
+        ],
+      },
+      {
+        name: "Groq LPU & Gemini",
+        usedIn: [
+          "MarketMind",
+          "ATS Resume Compiler",
+          "FinOps GraphRAG",
+          "AgenticHire",
+        ],
+      },
+      {
+        name: "LangSmith",
+        usedIn: ["Agent trace inspection & evaluation pipelines"],
+      },
     ],
   },
   {
-    category: "Backends & APIs",
+    category: "Backends, Streaming & Interactive UIs",
     skills: [
       {
         name: "FastAPI",
-        usedIn: ["Horquva 12 security microservices", "FinOps GraphRAG"],
+        usedIn: [
+          "Horquva 12 security microservices",
+          "FinOps GraphRAG",
+          "AgenticHire",
+          "ATS Resume Compiler",
+        ],
+      },
+      {
+        name: "Server-Sent Events (SSE)",
+        usedIn: [
+          "LLM Streaming (Token-by-token generation)",
+          "AgenticHire real-time agent output",
+        ],
+      },
+      {
+        name: "Streamlit",
+        usedIn: [
+          "AgenticHire interactive recruiter studio",
+          "NeRF Turntable 3D controller",
+        ],
+      },
+      {
+        name: "Express.js & Node.js",
+        usedIn: ["AssessOps assessment engine & API gateway"],
       },
       {
         name: "Flask",
@@ -171,44 +250,85 @@ export const stackCategories: StackCategory[] = [
     ],
   },
   {
-    category: "Cloud, Containers & CI/CD",
+    category: "MLOps, Orchestration & QA",
     skills: [
       {
-        name: "AWS (EC2, S3, IAM)",
-        usedIn: ["FinOps GraphRAG", "Market Intelligence"],
-      },
-      {
-        name: "Docker",
-        usedIn: ["Containerized model inference APIs at ITSOLERA"],
-      },
-      {
-        name: "Kubernetes",
-        usedIn: ["Microservice deployment architecture at Horquva"],
-      },
-      {
-        name: "GitHub Actions",
+        name: "MLflow",
         usedIn: [
-          "Automated retraining pipelines at ITSOLERA",
-          "CI test suites",
+          "MLOps Production Blueprint (Experiment tracking & model registry)",
+          "ITSOLERA pipelines",
+        ],
+      },
+      {
+        name: "DVC",
+        usedIn: [
+          "MLOps Production Blueprint (Data versioning & pipeline reproducibility)",
+          "ITSOLERA",
+        ],
+      },
+      {
+        name: "Prefect",
+        usedIn: [
+          "MLOps Production Blueprint (Declarative DAG workflow orchestration)",
+        ],
+      },
+      {
+        name: "BentoML",
+        usedIn: [
+          "MLOps Production Blueprint (Production containerized model packaging & serving)",
+        ],
+      },
+      {
+        name: "Selenium & Pytest",
+        usedIn: [
+          "AssessOps (Automated headless E2E testing container)",
+          "MLOps Blueprint unit suites",
         ],
       },
     ],
   },
   {
-    category: "MLOps & Data Versioning",
+    category: "Cloud, DevOps & Data Infrastructure",
     skills: [
       {
-        name: "MLflow",
-        usedIn: ["Experiment tracking & model registry at ITSOLERA"],
+        name: "Docker & Docker Compose",
+        usedIn: [
+          "AssessOps microservices",
+          "FinOps GraphRAG",
+          "MarketMind",
+          "MLOps Blueprint",
+        ],
       },
-      { name: "DVC", usedIn: ["Data and pipeline versioning at ITSOLERA"] },
-    ],
-  },
-  {
-    category: "Databases",
-    skills: [
-      { name: "PostgreSQL", usedIn: ["Structured operational storage"] },
-      { name: "MongoDB", usedIn: ["Unstructured document and entity storage"] },
+      {
+        name: "Jenkins",
+        usedIn: [
+          "AssessOps (Automated declarative CI/CD pipelines & build alerting)",
+        ],
+      },
+      {
+        name: "Terraform / OpenTofu",
+        usedIn: [
+          "MLOps Production Blueprint (Declarative AWS infrastructure as code)",
+        ],
+      },
+      {
+        name: "AWS (EC2, S3, Lambda, ECR)",
+        usedIn: ["MLOps Production Blueprint", "FinOps GraphRAG", "MarketMind"],
+      },
+      {
+        name: "PostgreSQL & MongoDB",
+        usedIn: [
+          "AssessOps (MongoDB document persistence)",
+          "PostgreSQL structured relational storage",
+        ],
+      },
+      {
+        name: "GitHub Actions",
+        usedIn: [
+          "Automated CI test suites",
+          "ITSOLERA automated retraining workflows",
+        ],
+      },
     ],
   },
 ];
