@@ -5,7 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+html.dark {
   /* =========================================================================
      DARK THEME (Default) — Swiss Systems (Option 2)
      Deep Technical Slate, Architectural Slab, Signal Cobalt, Telemetry Cyan
@@ -74,6 +75,7 @@ html.light {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
+    transition: background-color 200ms ease, color 200ms ease;
   }
 
   /* Accessible instant focus ring per Hallmark Floor Rule 6 */

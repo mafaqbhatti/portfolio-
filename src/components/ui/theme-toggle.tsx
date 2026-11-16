@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -31,10 +32,10 @@ export function ThemeToggle() {
     return (
       <button
         type="button"
-        className="px-2.5 py-1 rounded border hairline-border font-mono text-[11px] text-text-muted bg-surface"
+        className="w-8 h-8 flex items-center justify-center rounded border hairline-border bg-surface text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         aria-label="Toggle theme"
       >
-        <span className="uppercase tracking-wider">theme: dark</span>
+        <Sun className="w-4 h-4 opacity-75" aria-hidden="true" />
       </button>
     );
   }
@@ -43,10 +44,25 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      className="px-2.5 py-1 rounded border hairline-border font-mono text-[11px] text-text-muted hover:text-text hover:border-text-muted transition-colors duration-150 bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-      aria-label={`Current theme is ${theme}. Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+      className="w-8 h-8 flex items-center justify-center rounded border hairline-border bg-surface text-text-muted hover:text-text hover:border-text-muted transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent cursor-pointer"
+      aria-label={
+        theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+      }
+      title={
+        theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+      }
     >
-      <span className="uppercase tracking-wider">theme: {theme}</span>
+      {theme === "dark" ? (
+        <Sun
+          className="w-4 h-4 transition-transform duration-200 hover:rotate-45"
+          aria-hidden="true"
+        />
+      ) : (
+        <Moon
+          className="w-4 h-4 transition-transform duration-200 hover:-rotate-12"
+          aria-hidden="true"
+        />
+      )}
     </button>
   );
 }
