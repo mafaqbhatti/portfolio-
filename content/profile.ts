@@ -38,27 +38,40 @@ export const kaggleStatus: KaggleStatus = {
 
 export const experiences: ExperienceItem[] = [
   {
-    id: "horquva",
-    company: "Horquva",
-    role: "AI Evaluation Engineer Intern",
-    location: "Islamabad",
-    period: "Jun 2026 – Aug 2026",
+    id: "elevensoftwares-ml-engineer",
+    company: "ElevenSoftwares",
+    role: "ML Engineer I",
+    location: "Islamabad, PK",
+    period: "Dec 2025 – Present",
     bullets: [
-      "Designed the architecture of an AI security platform covering agent identity and authorization, guardrails, prompt-injection defense, tool permissions, memory isolation, risk assessment, and a kill switch.",
-      "Built and evaluated 12 FastAPI security microservices with a shared contracts library, validated by 78 passing tests.",
+      "Architect production RAG and GraphRAG knowledge pipelines (LangChain, LangGraph) over unstructured documents and databases, cutting manual verification and document retrieval time by 70%.",
+      "Develop autonomous LangGraph agentic workflows and tool-calling systems to automate decision-making; containerized and deployed scalable FastAPI microservices via Docker on AWS (EC2, S3).",
+      "Built VisionAttend, a deep learning biometric verification system incorporating RetinaFace (CNN) for face detection, ArcFace embeddings, and anti-spoofing liveness classification with a PostgreSQL backend.",
+      "Establish automated experiment tracking and model evaluation frameworks using MLflow and DVC, conducting systematic error analysis and hyperparameter sweeps.",
     ],
-    permissionMarker:
-      "TODO(owner): written permission to publish; keep all descriptions architecture-level, with no internal repo or directory names",
+  },
+  {
+    id: "elevensoftwares-ml-intern",
+    company: "ElevenSoftwares",
+    role: "ML Intern",
+    location: "Islamabad, PK",
+    period: "Sep 2025 – Nov 2025",
+    bullets: [
+      "Developed deep learning and NLP embedding pipelines for semantic candidate evaluation, optimizing cosine retrieval precision across high-dimensional vector spaces.",
+      "Built an intelligent Support Ticket Assistant combining supervised text classification with an LLM-powered RAG pipeline to automate context-grounded response generation.",
+      "Engineered an automated document OCR and table extraction pipeline with deterministic image preprocessing, cleansing, and tabular feature extraction for ERP reconciliation.",
+      "Trained and evaluated supervised classification models for transaction anomaly detection, performing rigorous feature engineering and confusion-matrix error analysis.",
+    ],
   },
   {
     id: "itsolera",
     company: "ITSOLERA",
     role: "Data Science Intern",
-    location: "Islamabad",
+    location: "Islamabad, PK",
     period: "Jul 2025 – Sep 2025",
     bullets: [
-      "Led a team shipping 6 ML solutions (including traffic-accident forecasting and demographic prediction) and built FinSentRisk (LSTM/ARIMA forecasting for market trends and risk).",
-      "Cut model deployment time by 40% with containerized Flask inference APIs and automated ingestion pipelines, using DVC, MLflow, GitHub Actions, and automated retraining.",
+      "Collaborated in a cross-functional technical team to develop, train, and deploy 6 production ML and deep learning models, including LSTM recurrent neural networks for temporal pattern forecasting.",
+      "Implemented complete MLOps lifecycle (DVC, MLflow, GitHub Actions CI/CD) and deployed containerized REST APIs in Python, accelerating release turnaround by 40%.",
     ],
   },
 ];
@@ -90,15 +103,12 @@ export const proofMetrics: ProofMetric[] = [
     methodLink: "/work/flood-forecasting#evaluation",
   },
   {
-    id: "security-tests",
-    value: "78",
-    unit: "Tests",
-    label: "Passing Security Microservice Tests",
+    id: "retrieval-cut",
+    value: "70%",
+    label: "Faster Knowledge Retrieval",
     description:
-      "Validating agent isolation, prompt guardrails, and tool authorization across 12 FastAPI services.",
+      "Reduced manual verification and document search time across enterprise knowledge bases via production RAG & GraphRAG pipelines at ElevenSoftwares.",
     methodLink: "#experience",
-    permissionMarker:
-      "TODO(owner): written permission to publish; keep all descriptions architecture-level, with no internal repo or directory names",
   },
 ];
 
@@ -219,7 +229,7 @@ export const stackCategories: StackCategory[] = [
       {
         name: "FastAPI",
         usedIn: [
-          "Horquva 12 security microservices",
+          "ElevenSoftwares production microservices",
           "FinOps GraphRAG",
           "AgenticHire",
           "ATS Resume Compiler",

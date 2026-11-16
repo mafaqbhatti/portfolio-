@@ -68,7 +68,7 @@ Edit [`content/profile.ts`](content/profile.ts) to modify:
 
 - Contact details, GitHub/LinkedIn URLs
 - Education & graduation date
-- Experience bullets (Horquva, ITSOLERA)
+- Experience bullets (ElevenSoftwares, ITSOLERA)
 - Proof strip metrics
 - Stack taxonomy and where each skill was used
 

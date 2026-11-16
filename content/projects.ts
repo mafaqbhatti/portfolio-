@@ -191,11 +191,10 @@ export const compactProjects: CompactProject[] = [
     linkMarker: "TODO(owner): repository/demo link",
   },
   {
-    name: "Horquva AI Security Platform Summary",
-    tech: "FastAPI · Agent Guardrails · Microservices",
+    name: "VisionAttend Biometric Verification System",
+    tech: "PyTorch · RetinaFace · ArcFace · FastAPI · PostgreSQL",
     description:
-      "Architectural design for agent authorization, prompt-injection defense, tool permissions, and kill switch.",
-    permissionMarker:
-      "TODO(owner): written permission to publish; keep all descriptions architecture-level, with no internal repo or directory names",
+      "Deep learning biometric verification platform integrating RetinaFace CNN detection, ArcFace embeddings, and anti-spoofing liveness classification.",
+    linkMarker: "TODO(owner): repository/demo link",
   },
 ];

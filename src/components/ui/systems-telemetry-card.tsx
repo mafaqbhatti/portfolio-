@@ -41,10 +41,10 @@ export function SystemsTelemetryCard() {
 
         <div className="p-2.5 rounded bg-surface-2 border border-border">
           <div className="text-[10px] font-mono text-text-muted mb-0.5">
-            EVAL TESTS
+            RETRIEVAL CUT
           </div>
-          <div className="text-lg font-mono font-bold text-text">78/78</div>
-          <div className="text-[10px] font-mono text-text-muted">Passing</div>
+          <div className="text-lg font-mono font-bold text-text">70%</div>
+          <div className="text-[10px] font-mono text-cyan">Time saved</div>
         </div>
       </div>
 
