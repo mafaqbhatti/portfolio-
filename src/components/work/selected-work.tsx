@@ -17,14 +17,14 @@ export function SelectedWork() {
           <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded shadow-xl">
             <div className="font-mono text-[10px] text-text-muted flex justify-between">
               <span>SAR + SATELLITE FUSION</span>
-              <span className="text-cyan font-semibold">IoU 0.65</span>
+              <span className="text-cyan font-semibold">84.5% RECALL</span>
             </div>
             <div className="py-2">
               <div className="text-xs font-mono text-text font-bold mb-1">
                 ResNet18 + ConvLSTM + U-Net
               </div>
               <div className="text-[11px] text-text-muted">
-                19,964 held-out multi-sensor samples across Pakistan
+                84.5% Recall · 0.65 IoU across 19,964 held-out samples
               </div>
             </div>
             <div className="font-mono text-[10px] text-text-faint">

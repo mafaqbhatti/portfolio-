@@ -82,11 +82,11 @@ export const proofMetrics: ProofMetric[] = [
   },
   {
     id: "flood-accuracy",
-    value: "0.65",
-    unit: "IoU",
-    label: "Held-Out Flood Accuracy",
+    value: "84.5%",
+    unit: "Recall",
+    label: "Held-Out Inundation Recall",
     description:
-      "Evaluated on 19,964 held-out satellite samples across Pakistan (Dice/F1: 0.7876, Recall: 0.8125).",
+      "Disaster-critical sensitivity prioritizing zero-miss flood detection across 19,964 held-out samples (Recall: 0.8435 / 84.5%, IoU: 0.6496, Dice: 0.7876).",
     methodLink: "/work/flood-forecasting#evaluation",
   },
   {

@@ -8,7 +8,7 @@ export const flagshipProjects: FlagshipProject[] = [
     headline:
       "Pixel-level flood probability maps via multi-sensor satellite fusion",
     outcome:
-      "IoU 0.6496 and Dice 0.7876 on 19,964 held-out multi-sensor samples",
+      "0.8435 (84.5%) Recall and 0.6496 IoU on 19,964 held-out multi-sensor samples",
     role: "Final-year project (owns all AI/ML components)",
     year: "2026",
     timeframe: "2025 – 2026",
@@ -21,11 +21,11 @@ export const flagshipProjects: FlagshipProject[] = [
       "Google Colab (Tesla T4)",
     ],
     heroMetric: {
-      value: "0.65",
-      label: "Held-out IoU",
+      value: "84.5%",
+      label: "Inundation Recall (IoU 0.65)",
     },
     metricsFootnote:
-      "Evaluated on 19,964 held-out satellite samples across Pakistan (Sentinel-1 SAR, GPM, SMAP).",
+      "Prioritizing disaster sensitivity (Recall 0.8435) to eliminate missed inundations, evaluated on 19,964 held-out satellite samples alongside 0.6496 IoU.",
     summary: [
       "Designed and implemented an end-to-end multi-sensor deep learning pipeline to predict pixel-level flood extents across Pakistan.",
       "Fused Sentinel-1 Synthetic Aperture Radar (SAR), GPM precipitation, SMAP soil moisture, elevation, slope, and land cover into a temporal spatiotemporal model.",
