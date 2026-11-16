@@ -35,7 +35,7 @@ const projects = [
       "A from-scratch PyTorch implementation of Neural Radiance Fields — positional encoding, an 8-layer density/color MLP, and volumetric ray-marching, trained on 20 turntable photos to synthesize novel 360° views. Wrapped in a FastAPI + React app with an async render-job queue so anyone can generate a rotating GIF from the trained model on demand.",
     tags: ["PyTorch", "NeRF", "Volumetric Rendering", "FastAPI", "React"],
     path: "~/projects/nerf-turntable",
-    github: "https://github.com/mafaqbhatti/nerf"
+    github: "https://github.com/mafaqbhatti/nerf-turntable-3d"
   },
   {
     title: "VisionRAG",

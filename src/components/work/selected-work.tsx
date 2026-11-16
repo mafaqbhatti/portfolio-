@@ -93,6 +93,26 @@ export function SelectedWork() {
             </div>
           </div>
         );
+      case "nerf-turntable":
+        return (
+          <div className="w-full h-full p-4 flex flex-col justify-between bg-surface border border-border rounded shadow-xl">
+            <div className="font-mono text-[10px] text-text-muted flex justify-between">
+              <span>NEURAL RADIANCE FIELDS</span>
+              <span className="text-cyan font-semibold">60 FPS 360°</span>
+            </div>
+            <div className="py-2">
+              <div className="text-xs font-mono text-text font-bold mb-1">
+                PyTorch · Stratified Ray Marching
+              </div>
+              <div className="text-[11px] text-text-muted">
+                Continuous 3D volumetric representation from 20 turntable photos
+              </div>
+            </div>
+            <div className="font-mono text-[10px] text-text-faint">
+              CUDA · FastAPI · React 19 · SQLAlchemy
+            </div>
+          </div>
+        );
       default:
         return null;
     }

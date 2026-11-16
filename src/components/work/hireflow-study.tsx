@@ -12,9 +12,14 @@ import { ExternalLink } from "lucide-react";
 export function HireFlowStudy() {
   const prevProject = flagshipProjects[2];
   const project = flagshipProjects[3];
+  const nextProject = flagshipProjects[4];
 
   return (
-    <CaseStudyLayout project={project} prevProject={prevProject}>
+    <CaseStudyLayout
+      project={project}
+      prevProject={prevProject}
+      nextProject={nextProject}
+    >
       {/* 1. Summary & Facts Bar */}
       <Section
         id="summary"

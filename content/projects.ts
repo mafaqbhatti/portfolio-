@@ -131,6 +131,41 @@ export const flagshipProjects: FlagshipProject[] = [
     repoUrl: "https://github.com/mafaqbhatti/AgenticHire-",
     markers: [],
   },
+  {
+    slug: "nerf-turntable",
+    index: "05",
+    title: "NeRF Turntable — 2D to 3D Neural View Synthesis",
+    headline:
+      "From-scratch PyTorch Neural Radiance Field synthesizing 360° novel views from circular photographs",
+    outcome:
+      "Continuous volumetric 3D scene representation and 60-frame orbiting animation rendering on consumer GPU (RTX 3050, 4GB VRAM)",
+    role: "Computer Vision & Deep Learning Engineer",
+    year: "2025",
+    timeframe: "Nov 2024 – Jan 2025",
+    stack: [
+      "PyTorch",
+      "CUDA",
+      "FastAPI",
+      "React 19",
+      "Tailwind CSS",
+      "SQLAlchemy",
+      "NumPy",
+      "Docker",
+    ],
+    heroMetric: {
+      value: "60 fps",
+      label: "360° Novel-view synthesis",
+    },
+    metricsFootnote:
+      "Trained on 20 circular turntable photographs across 30,000 gradient steps with stratified ray marching (96 samples/ray) on RTX 3050 Laptop GPU.",
+    summary: [
+      "Engineered a from-scratch PyTorch implementation of Neural Radiance Fields (NeRF, Mildenhall et al.) without external rendering frameworks.",
+      "Implemented harmonic positional encoding (L=10 spatial, L=4 directional), an 8-layer MLP with Softplus density activation and view-dependent color heads, and numerical quadrature volume rendering.",
+      "Wrapped the implicit representation in a full-stack FastAPI and React 19 web application with asynchronous background worker queues and SQLite/PostgreSQL persistence.",
+    ],
+    repoUrl: "https://github.com/mafaqbhatti/nerf-turntable-3d",
+    markers: [],
+  },
 ];
 
 export const compactProjects: CompactProject[] = [

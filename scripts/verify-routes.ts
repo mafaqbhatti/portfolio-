@@ -29,6 +29,11 @@ const ROUTES_TO_TEST: RouteCheck[] = [
     expectedStatus: 200,
     description: "Flagship Case Study 4 (HireFlow / AgenticHire)",
   },
+  {
+    path: "/work/nerf-turntable",
+    expectedStatus: 200,
+    description: "Flagship Case Study 5 (NeRF Turntable 3D)",
+  },
   { path: "/robots.txt", expectedStatus: 200, description: "Robots.txt" },
   { path: "/sitemap.xml", expectedStatus: 200, description: "Sitemap.xml" },
   {
