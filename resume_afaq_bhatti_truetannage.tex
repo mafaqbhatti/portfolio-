@@ -1,0 +1,130 @@
+\documentclass[10pt,letterpaper]{article}
+
+% ATS-Friendly Configuration and Glyphs
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,margin=0.42in,top=0.38in,bottom=0.38in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Unicode mapping for ATS text extraction
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Document Layout and Spacing
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Bullet List Styling
+\setlist[itemize]{leftmargin=1.15em, label=\raisebox{0.2ex}{\tiny$\bullet$}, itemsep=1.3pt, topsep=1.3pt, parsep=0pt, partopsep=0pt}
+
+% Section Heading Command
+\newcommand{\resumesection}[1]{%
+  \vspace{4pt}%
+  {\fontsize{10.5pt}{12pt}\selectfont\textbf{\MakeUppercase{#1}}}%
+  \vspace{1.5pt}%
+  \hrule height 0.5pt%
+  \vspace{3pt}%
+}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+  {\fontsize{18pt}{20pt}\selectfont\textbf{M Afaq Bhatti}}\\[3pt]
+  {\fontsize{9pt}{11pt}\selectfont Islamabad, PK \ \textbar\ \ +92-302-4836881 \ \textbar\ \ \href{mailto:afaqbhatti147@gmail.com}{afaqbhatti147@gmail.com} \ \textbar\ \ \href{https://www.linkedin.com/in/m-afaq-bhatti/}{linkedin.com/in/m-afaq-bhatti} \ \textbar\ \ \href{https://github.com/mafaqbhatti}{github.com/mafaqbhatti}}
+\end{center}
+\vspace{-6pt}
+
+% SUMMARY
+\resumesection{Summary}
+Junior AI Engineer with strong Python programming skills and practical experience building real-world AI applications, REST APIs, and LLM-powered solutions. Hands-on expertise integrating OpenAI, Gemini, and open-source APIs to develop retrieval-augmented generation (RAG) pipelines, conversational chatbots, and automated workflows. Kaggle Global Top-14 Data Scientist with a proven problem-solving mindset, eager to contribute and learn within a collaborative engineering team.
+
+% EDUCATION
+\resumesection{Education}
+\noindent\textbf{COMSATS University Islamabad (CUI)} \hfill \textit{Feb 2023 - Jan 2027} \\
+\textit{BS Computer Science \textbar\ Islamabad, PK} \hfill \textit{CGPA: 3.4 / 4.0}
+\begin{itemize}
+  \item \textbf{Relevant Coursework:} Generative AI, Machine Learning, Deep Learning, Data Structures \& Algorithms, Database Systems, Object-Oriented Programming (Python), REST APIs
+\end{itemize}
+
+% WORK EXPERIENCE
+\resumesection{Work Experience}
+\noindent\textbf{ML Engineer I} \hfill \textit{Dec 2025 - Present} \\
+\textit{ElevenSoftwares}
+\begin{itemize}
+  \item Develop AI-powered applications and LLM features in \textbf{Python}, integrating \textbf{OpenAI and Gemini APIs} to translate business requirements into real-world solutions.
+  \item Design and maintain production \textbf{RAG pipelines} (LangChain, LangGraph) over documents and databases, cutting manual verification and data retrieval time by \textbf{70\%}.
+  \item Build and test modular \textbf{REST APIs} using \textbf{FastAPI}, containerizing microservices with \textbf{Docker} and deploying to AWS cloud infrastructure.
+  \item Implement structured prompt engineering and output validation to ensure reliable, accurate responses; collaborate via \textbf{Git/GitHub} using PR workflows.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{ML Intern} \hfill \textit{Sep 2025 - Nov 2025} \\
+\textit{ElevenSoftwares}
+\begin{itemize}
+  \item Built an intelligent \textbf{Support Ticket Chatbot} combining supervised text classification with an LLM-powered RAG pipeline to automate context-grounded responses.
+  \item Engineered an automated document extraction pipeline in \textbf{Python} with deterministic data cleansing and validation rules for table extraction and database reconciliation.
+  \item Collaborated with senior engineers using \textbf{Git/GitHub} for feature branching, code reviews, and version tracking.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Data Science Intern} \hfill \textit{Jul 2025 - Sep 2025} \\
+\textit{ITSOLERA}
+\begin{itemize}
+  \item Collaborated in a cross-functional technical team to develop, test, and deploy 6 production ML models, integrating predictive features into client web applications via \textbf{REST APIs}.
+  \item Conducted exploratory data analysis (EDA), data cleaning, and preprocessing with \textbf{Pandas} and \textbf{NumPy}; tracked experiments using \textbf{Git} and MLflow.
+\end{itemize}
+
+% PROJECTS
+\resumesection{Projects}
+\noindent\textbf{FinOps-Optimized GraphRAG: Enterprise Knowledge Retrieval Engine} \hfill \textit{Apr 2026}
+\begin{itemize}
+  \item Architected a cost-effective RAG pipeline using \textbf{Google Gemini API} and \textbf{LightRAG} for automated document understanding, cutting LLM inference costs by \textbf{50x}.
+  \item Built high-throughput \textbf{REST APIs} in \textbf{Python (FastAPI)} backed by NanoVectorDB semantic search, achieving sub-second response times.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{HireFlow: AI Automation \& Recruitment Platform} \hfill \textit{May 2026}
+\begin{itemize}
+  \item Developed an end-to-end AI automation workflow in \textbf{Python} using LLM APIs to extract structured JSON data from candidate documents with high accuracy.
+  \item Implemented \textbf{RESTful endpoints} with \textbf{FastAPI} and Redis caching; managed repository on \textbf{GitHub} with modular, clean documentation.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{MarketMind: Multi-Agent Intelligence System} \hfill \textit{Mar 2026}
+\begin{itemize}
+  \item Built a Python system coordinating multiple specialist agents via \textbf{LangGraph} and LLM APIs to ingest, analyze, and synthesize streaming data feeds in \textbf{4-8s}.
+  \item Connected external financial \textbf{REST APIs} and exposed analytical verdicts through a \textbf{FastAPI} backend and interactive web dashboard.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{VisionRAG: Multimodal Document Assistant} \hfill \textit{Apr 2026}
+\begin{itemize}
+  \item Created a document assistant using \textbf{Gemini API} and ColPali to index and query complex PDF documents, reports, and tables without OCR data loss.
+  \item Built an intuitive user interface in \textbf{Streamlit}, enabling real-time semantic Q\&A and cross-modal reasoning over multi-page documents.
+\end{itemize}
+
+% TECHNICAL SKILLS
+\resumesection{Technical Skills}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \item \textbf{Programming \& Web:} Python, REST APIs, FastAPI, SQL (PostgreSQL, MySQL), HTML/CSS, Git, GitHub
+  \item \textbf{AI \& LLM APIs:} OpenAI APIs (ChatGPT), Google Gemini API, Anthropic Claude, Prompt Engineering, LLM Fundamentals
+  \item \textbf{Frameworks \& Libraries:} LangChain, LangGraph, RAG Systems, Vector Databases (NanoVectorDB, Chroma), Streamlit
+  \item \textbf{Machine Learning \& Data:} Scikit-learn, PyTorch, Pandas, NumPy, Data Cleaning, Model Evaluation
+  \item \textbf{Tools \& Cloud:} Docker, AWS (EC2, S3), Redis, Linux/Bash, Postman, CI/CD
+\end{itemize}
+
+% ACHIEVEMENTS AND CERTIFICATIONS
+\resumesection{Achievements \& Certifications}
+\begin{itemize}
+  \item \textbf{Kaggle Global Top-14 Data Scientist:} Ranked Top 14 worldwide out of thousands of competitive data science and machine learning practitioners; recognized for strong analytical and problem-solving skills.
+  \item \textbf{Certifications:} Complete Data Science, ML \& NLP Bootcamp (Udemy) \ \textbar\ \ Advanced SQL (Kaggle) \ \textbar\ \ Prompt Engineering \& Generative AI
+\end{itemize}
+
+\end{document}

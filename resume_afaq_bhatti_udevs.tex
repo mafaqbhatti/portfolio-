@@ -1,0 +1,131 @@
+\documentclass[10pt,letterpaper]{article}
+
+% ATS-Friendly Configuration and Glyphs
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,margin=0.42in,top=0.36in,bottom=0.36in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Unicode mapping for ATS text extraction
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Document Layout and Spacing
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Bullet List Styling
+\setlist[itemize]{leftmargin=1.15em, label=\raisebox{0.2ex}{\tiny$\bullet$}, itemsep=1.2pt, topsep=1.2pt, parsep=0pt, partopsep=0pt}
+
+% Section Heading Command
+\newcommand{\resumesection}[1]{%
+  \vspace{3.5pt}%
+  {\fontsize{10.5pt}{12pt}\selectfont\textbf{\MakeUppercase{#1}}}%
+  \vspace{1.5pt}%
+  \hrule height 0.5pt%
+  \vspace{2.5pt}%
+}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+  {\fontsize{18pt}{20pt}\selectfont\textbf{M Afaq Bhatti}}\\[3pt]
+  {\fontsize{9pt}{11pt}\selectfont Islamabad, PK \ \textbar\ \ +92-302-4836881 \ \textbar\ \ \href{mailto:afaqbhatti147@gmail.com}{afaqbhatti147@gmail.com}}\\[2pt]
+  {\fontsize{9pt}{11pt}\selectfont \href{https://mafaqbhatti.netlify.app/}{mafaqbhatti.netlify.app} \ \textbar\ \ \href{https://www.linkedin.com/in/m-afaq-bhatti/}{linkedin.com/in/m-afaq-bhatti} \ \textbar\ \ \href{https://github.com/mafaqbhatti}{github.com/mafaqbhatti}}
+\end{center}
+\vspace{-6pt}
+
+% SUMMARY
+\resumesection{Summary}
+Full Stack AI Engineer with hands-on experience building complete AI-powered products, from responsive user interfaces to scalable backend intelligence. Proficient in modern frontend development (Next.js, React, TypeScript, Tailwind CSS) paired with high-performance Python backends (FastAPI, Flask) and PostgreSQL database design. Experienced architecting production RAG pipelines (LangChain, LlamaIndex), multi-agent systems (LangGraph), and integrating LLM APIs (OpenAI, Gemini, Claude, Groq) with JWT authentication, streaming, and Docker deployment on AWS.
+
+% EDUCATION
+\resumesection{Education}
+\noindent\textbf{COMSATS University Islamabad (CUI)} \hfill \textit{Feb 2023 - Jan 2027} \\
+\textit{BS Computer Science \textbar\ Islamabad, PK} \hfill \textit{CGPA: 3.4 / 4.0}
+\begin{itemize}
+  \item \textbf{Relevant Coursework:} Web Engineering (Next.js/React), Database Systems, Generative AI, Agentic AI, Machine Learning, Data Structures \& Algorithms, MLOps
+\end{itemize}
+
+% WORK EXPERIENCE
+\resumesection{Work Experience}
+\noindent\textbf{ML Engineer I} \hfill \textit{Dec 2025 - Present} \\
+\textit{ElevenSoftwares}
+\begin{itemize}
+  \item Architect and deploy full-stack AI solutions, integrating modern web interfaces with \textbf{FastAPI} microservices and \textbf{PostgreSQL} databases to deliver end-to-end client applications.
+  \item Build production \textbf{RAG and GraphRAG pipelines} (LangChain, LangGraph) over documents and databases, cutting manual verification and data retrieval latency by \textbf{70\%}.
+  \item Develop autonomous \textbf{Agentic AI workflows} with tool calling to automate complex business logic; secured services with \textbf{JWT authentication} and containerized via \textbf{Docker on AWS}.
+  \item Integrate and benchmark \textbf{OpenAI, Gemini, and open-source LLMs}, designing prompt pipelines with structured JSON outputs and real-time streaming response handling.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{ML Intern} \hfill \textit{Sep 2025 - Nov 2025} \\
+\textit{ElevenSoftwares}
+\begin{itemize}
+  \item Built an intelligent \textbf{Support Ticket Chatbot} combining supervised intent classification with an LLM-powered RAG pipeline to automate context-grounded response generation.
+  \item Engineered an automated document extraction engine in \textbf{Python} with deterministic validation rules for table extraction and database synchronization.
+  \item Collaborated in an agile engineering team using \textbf{Git/GitHub} for feature branching, code reviews, and automated CI/CD pipeline deployments.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Data Science Intern} \hfill \textit{Jul 2025 - Sep 2025} \\
+\textit{ITSOLERA}
+\begin{itemize}
+  \item Collaborated in a cross-functional technical team to develop, test, and deploy 6 production ML models, integrating predictive intelligence into client web applications via \textbf{REST APIs}.
+  \item Implemented complete \textbf{MLOps lifecycle} (DVC, MLflow, GitHub Actions CI/CD) and deployed containerized REST APIs in Python, accelerating release turnaround by \textbf{40\%}.
+\end{itemize}
+
+% PROJECTS
+\resumesection{Projects}
+\noindent\textbf{HireFlow: Distributed Full-Stack AI Automation Platform} \hfill \textit{May 2026}
+\begin{itemize}
+  \item Designed a full-stack automation platform decoupling 4 autonomous agents across \textbf{Apache Kafka} and \textbf{Redis} for fault-tolerant, parallel document evaluation.
+  \item Integrated \textbf{Groq LLaMA} models for structured candidate assessment, implementing stateless \textbf{JWT authentication}, AES-256 encryption, and modular REST APIs.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{FinOps-Optimized GraphRAG: Enterprise Knowledge Engine} \hfill \textit{Apr 2026}
+\begin{itemize}
+  \item Architected a cost-optimized GraphRAG engine using \textbf{LightRAG}, \textbf{Gemini}, and \textbf{Groq} for automated entity-relationship extraction, reducing LLM inference costs by \textbf{50x}.
+  \item Built multi-mode hybrid retrieval combining \textbf{NanoVectorDB} semantic search with graph traversal; exposed sub-second query endpoints via \textbf{FastAPI} on AWS.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{MarketMind: Real-Time Multi-Agent Intelligence System} \hfill \textit{Mar 2026}
+\begin{itemize}
+  \item Engineered a distributed multi-agent system executing 5 parallel specialist agents orchestrated via \textbf{LangGraph fan-out} and tool calling, synthesizing streaming signals in \textbf{4-8s}.
+  \item Deployed containerized backend inference microservices with \textbf{Docker on AWS EC2}, connecting real-time REST feeds to an interactive web dashboard.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Personal Engineering Portfolio: Next.js Technical Web App} \hfill \textit{2026}
+\begin{itemize}
+  \item Developed a production-grade personal portfolio using \textbf{Next.js 15 (App Router)}, \textbf{TypeScript (strict mode)}, \textbf{Tailwind CSS}, and Motion, achieving 100\% performance and SEO scores.
+  \item Implemented dynamic OpenGraph image generation, clean component architecture, and automated CI/CD deployment pipelines on \textbf{Netlify}.
+\end{itemize}
+
+% TECHNICAL SKILLS
+\resumesection{Technical Skills}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \item \textbf{Front-End \& Web:} Next.js, React.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3, Motion
+  \item \textbf{Back-End \& Databases:} Python (FastAPI, Flask), Node.js, PostgreSQL, MySQL, REST APIs, JWT/OAuth Authentication
+  \item \textbf{Generative AI \& LLMs:} OpenAI APIs, Anthropic Claude, Google Gemini API, Groq, LLaMA, Prompt Engineering, Structured JSON Outputs
+  \item \textbf{Frameworks \& Vector DBs:} LangChain, LangGraph, LlamaIndex, Agentic AI, RAG Systems, Vector DBs (Chroma, NanoVectorDB, FAISS)
+  \item \textbf{Cloud \& DevOps:} Docker, AWS (EC2, S3), Redis, Apache Kafka, Git, GitHub, CI/CD (GitHub Actions), Netlify
+\end{itemize}
+
+% ACHIEVEMENTS AND CERTIFICATIONS
+\resumesection{Achievements \& Certifications}
+\begin{itemize}
+  \item \textbf{Kaggle Global Top-14 Data Scientist:} Ranked Top 14 worldwide out of thousands of competitive data science and machine learning practitioners; recognized for elite feature engineering and modeling.
+  \item \textbf{Certifications:} Complete Data Science, ML \& NLP Bootcamp (Udemy) \ \textbar\ \ Advanced SQL (Kaggle) \ \textbar\ \ Prompt Engineering \& Generative AI
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,121 @@
+\documentclass[10pt,letterpaper]{article}
+
+% ATS-Friendly Configuration and Glyphs
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,margin=0.38in,top=0.32in,bottom=0.32in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Unicode mapping for ATS text extraction
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Document Layout and Spacing
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Bullet List Styling
+\setlist[itemize]{leftmargin=1.15em, label=\raisebox{0.2ex}{\tiny$\bullet$}, itemsep=1.0pt, topsep=1.0pt, parsep=0pt, partopsep=0pt}
+
+% Section Heading Command
+\newcommand{\resumesection}[1]{%
+  \vspace{3.0pt}%
+  {\fontsize{10pt}{11.5pt}\selectfont\textbf{\MakeUppercase{#1}}}%
+  \vspace{1.0pt}%
+  \hrule height 0.5pt%
+  \vspace{2.0pt}%
+}
+
+\begin{document}
+
+% 1. HEADER
+\begin{center}
+  {\fontsize{17pt}{19pt}\selectfont\textbf{M Afaq Bhatti}}\\[2.5pt]
+  {\fontsize{9pt}{10.5pt}\selectfont Lahore, Pakistan \ \textbar\ \ +92-302-4836881 \ \textbar\ \ \href{mailto:afaqbhatti147@gmail.com}{afaqbhatti147@gmail.com}}\\[1.5pt]
+  {\fontsize{9pt}{10.5pt}\selectfont \href{https://mafaqbhatti.netlify.app/}{mafaqbhatti.netlify.app} \ \textbar\ \ \href{https://www.linkedin.com/in/m-afaq-bhatti/}{linkedin.com/in/m-afaq-bhatti} \ \textbar\ \ \href{https://github.com/mafaqbhatti}{github.com/mafaqbhatti}}
+\end{center}
+\vspace{-6pt}
+
+% 2. SUMMARY
+\resumesection{Summary}
+Hands-on Junior AI Engineer with 1.5+ years of experience building and deploying production AI agents, chatbots, RAG pipelines, and automated workflows. Core stack spans Python, TypeScript, OpenAI/Gemini/Claude APIs, LangChain, LangGraph, FastAPI, and Docker. Architected an enterprise retrieval system cutting verification time by 70\% and lowering inference costs by 50x; based in Lahore and immediately available for on-site engineering.
+
+% 3. WORK EXPERIENCE
+\resumesection{Work Experience}
+\noindent\textbf{ML Engineer I} \hfill \textit{Dec 2025 - Present} \\
+\textit{ElevenSoftwares \textbar\ Lahore, PK}
+\begin{itemize}
+  \item Built \textbf{VisionAttend}, a production-grade facial recognition attendance system combining face detection (RetinaFace/MTCNN), ArcFace/InsightFace embeddings, and anti-spoofing liveness verification into an end-to-end pipeline.
+  \item Designed and built \textbf{RAG and GraphRAG pipelines} using \textbf{LangChain/LangGraph}, enabling clients to query internal knowledge bases and unstructured documents with contextually accurate responses.
+  \item Built \textbf{agentic automation workflows} using \textbf{LangGraph} that replaced multi-step manual processes, reducing turnaround time on repetitive client tasks.
+  \item Engineered and deployed backend services using \textbf{FastAPI}, containerized with \textbf{Docker}, and deployed on \textbf{AWS} to serve ML/LLM systems reliably in production.
+\end{itemize}
+
+\vspace{1.5pt}
+\noindent\textbf{ML Intern} \hfill \textit{Sep 2025 - Nov 2025} \\
+\textit{ElevenSoftwares \textbar\ Lahore, PK}
+\begin{itemize}
+  \item Developed a \textbf{Resume/CV Screening and Ranking System} using PDF/text extraction and NLP to parse candidate skills, experience, and education, ranking applicants against job descriptions using \textbf{semantic embeddings} and fit-based scoring.
+  \item Built a \textbf{Support Ticket Auto-Categorization and Response Suggestion System} using supervised ML for classification and urgency detection, integrated with an \textbf{LLM-powered RAG pipeline} to generate knowledge-grounded response drafts.
+  \item Developed a \textbf{Personal Finance and Expense Intelligence System} that automatically categorized financial transactions and detected anomalies including duplicate charges and unusual spending patterns, using \textbf{classification and anomaly detection} techniques.
+\end{itemize}
+
+\vspace{1.5pt}
+\noindent\textbf{Data Science Intern} \hfill \textit{Jul 2025 - Sep 2025} \\
+\textit{ITSOLERA \textbar\ Rawalpindi, PK}
+\begin{itemize}
+  \item Led a \textbf{5-member Data Science team} (1 of 7 intern teams in the cohort), managing project planning, task delegation, and end-to-end delivery across \textbf{6 ML projects}.
+  \item Built a \textbf{Road Accident Prediction model achieving 92\% accuracy} using data cleaning, feature engineering, and classification algorithms to identify high-risk conditions.
+  \item Developed a \textbf{time series forecasting model for Scotland's birth rate, achieving 85\% accuracy} using statistical and deep learning forecasting techniques on historical demographic data.
+\end{itemize}
+
+% 4. PROJECTS
+\resumesection{Projects}
+\noindent\textbf{FinOps-Optimized GraphRAG: Enterprise Knowledge Engine} \hfill \textit{Python, LightRAG, Gemini API, NanoVectorDB, FastAPI, Docker}
+\begin{itemize}
+  \item Engineered a hybrid GraphRAG engine combining vector search and entity graphs for multi-hop Q\&A, slashing LLM API inference costs by \textbf{50x} while maintaining 95\%+ context precision.
+  \item Exposed sub-second query endpoints via a containerized \textbf{FastAPI} backend with \textbf{Docker}, complete with automated payload validation and error logging.
+\end{itemize}
+
+\vspace{1.5pt}
+\noindent\textbf{MarketMind: Parallel Multi-Agent Intelligence System} \hfill \textit{LangGraph, OpenAI/Claude APIs, Python, Docker, AWS EC2}
+\begin{itemize}
+  \item Built a distributed multi-agent system orchestrating 5 parallel specialist agents via \textbf{LangGraph fan-out} and tool calling, synthesizing complex real-time signals into verdicts in \textbf{4-8 seconds}.
+  \item Deployed inference microservices with \textbf{Docker on AWS EC2}, integrating automated retry strategies and fault-tolerant state handling.
+\end{itemize}
+
+\vspace{1.5pt}
+\noindent\textbf{HireFlow: Multi-Agent Intelligent Automation Platform} \hfill \textit{Python, Next.js/React, Redis, Apache Kafka, LLMs, REST APIs}
+\begin{itemize}
+  \item Designed an end-to-end automation workflow orchestrating 4 decoupled AI agents across \textbf{Kafka and Redis} for parallel candidate screening, accelerating evaluation throughput by \textbf{75\%}.
+  \item Built a responsive full-stack interface using \textbf{Next.js and React} integrated with secure FastAPI endpoints and stateless authentication.
+\end{itemize}
+
+% 5. EDUCATION
+\resumesection{Education}
+\noindent\textbf{COMSATS University Islamabad (CUI)} \hfill \textit{Feb 2023 - Jan 2027} \\
+\textit{Bachelor of Science in Computer Science (BSCS) \textbar\ Lahore / Islamabad, PK} \hfill \textit{CGPA: 3.4 / 4.0}
+
+% 6. TECHNICAL SKILLS
+\resumesection{Technical Skills}
+\begin{itemize}[leftmargin=0pt, label={}]
+  \item \textbf{AI Agents \& LLM Frameworks:} OpenAI APIs (GPT-4o), Anthropic Claude, Google Gemini API, LangChain, LangGraph, AI Agents, Chatbots, RAG, GraphRAG, n8n, Prompt Engineering, Tool Calling
+  \item \textbf{Languages \& Backend:} Python, JavaScript/TypeScript, FastAPI, REST APIs, SQL (PostgreSQL, MySQL), Next.js, React
+  \item \textbf{Vector DBs \& Data:} Vector Databases (Chroma, NanoVectorDB), PyTorch, Scikit-learn, Pandas, NumPy, Data Extraction
+  \item \textbf{Cloud, DevOps \& Tools:} Docker, AWS (EC2, S3), Git, GitHub, GitHub Actions CI/CD, Cursor, Claude Code, Redis, Linux/Bash
+\end{itemize}
+
+% 7. CERTIFICATIONS & ACHIEVEMENTS
+\resumesection{Certifications \& Achievements}
+\begin{itemize}
+  \item \textbf{Kaggle Global Top-14 Data Scientist:} Ranked Top 14 worldwide out of thousands of AI/ML practitioners for advanced feature engineering, model optimization, and competitive modeling.
+  \item \textbf{Certifications:} Prompt Engineering \& Generative AI \ \textbar\ \ Complete Data Science, ML \& NLP Bootcamp \ \textbar\ \ Advanced SQL (Kaggle)
+\end{itemize}
+
+\end{document}
